@@ -62,21 +62,6 @@
         <Translation Language="Korean">&lt;value&gt;</Translation>
         <Translation Language="Spanish">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_PAJA" Alignment="Center" TypographyId="size24">
-        <Translation Language="GB">Set strength</Translation>
-        <Translation Language="Korean">강도 설정</Translation>
-        <Translation Language="Spanish">Fuerza</Translation>
-      </Text>
-      <Text Id="__SingleUse_U6QI" Alignment="Center" TypographyId="size24">
-        <Translation Language="GB">Done</Translation>
-        <Translation Language="Korean">완료</Translation>
-        <Translation Language="Spanish">Hecho</Translation>
-      </Text>
-      <Text Id="__SingleUse_87G3" Alignment="Center" TypographyId="size24">
-        <Translation Language="GB">Done</Translation>
-        <Translation Language="Korean">완료</Translation>
-        <Translation Language="Spanish">Hecho</Translation>
-      </Text>
     </TextGroup>
     <TextGroup Id="Biometric">
       <Text Id="curSleepMvalue" Alignment="Center" TypographyId="size24">
@@ -764,11 +749,6 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_XZ8Y" Alignment="Center" TypographyId="size18">
-        <Translation Language="GB">Bluetooth connection&#10;required.</Translation>
-        <Translation Language="Korean">블루투스 연결이&#10;필요합니다.</Translation>
-        <Translation Language="Spanish">Se requiere conexión&#10;Bluetooth.</Translation>
-      </Text>
       <Text Id="goto_bluetooth_text" Alignment="Center" TypographyId="size24">
         <Translation Language="GB">bluetooth</Translation>
         <Translation Language="Korean">bluetooth</Translation>
@@ -798,16 +778,6 @@
         <Translation Language="GB">Emergency&#10;Alert</Translation>
         <Translation Language="Korean">구조 요청</Translation>
         <Translation Language="Spanish">Alerta de&#10;Emergencia</Translation>
-      </Text>
-      <Text Id="__SingleUse_TWFH" Alignment="Center" TypographyId="size24">
-        <Translation Language="GB">Charger&#10;disconnected.</Translation>
-        <Translation Language="Korean">충전기가&#10;해제되었습니다.</Translation>
-        <Translation Language="Spanish">Cargador&#10;desconectado.</Translation>
-      </Text>
-      <Text Id="__SingleUse_MNWB" Alignment="Center" TypographyId="size24">
-        <Translation Language="GB">Charger&#10;connected.</Translation>
-        <Translation Language="Korean">충전기가&#10;연결되었습니다.</Translation>
-        <Translation Language="Spanish">Cargador&#10;conectado.</Translation>
       </Text>
     </TextGroup>
   </Texts>
@@ -872,7 +842,7 @@
       <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="35" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
       <LanguageSetting Language="Spanish" Font="Pretendard-Regular.ttf" Size="35" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
     </Typography>
-    <Typography Id="size70" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0-9,a-z,A-Z">
+    <Typography Id="size70" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z">
       <LanguageSetting Language="GB" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
       <LanguageSetting Language="Korean" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
       <LanguageSetting Language="Spanish" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />

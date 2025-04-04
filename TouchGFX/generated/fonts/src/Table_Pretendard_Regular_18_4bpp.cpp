@@ -99,19 +99,14 @@ KEEP extern const touchgfx::GlyphNode glyphs_Pretendard_Regular_18_4bpp[] FONT_T
     {  5055, 0x00E1,   9,  14,  14,   0,  10, 240,   5, 0x01 }, // aacute
     {  5125, 0x00E9,  10,  15,  15,   0,  10, 245,   7, 0x01 }, // eacute
     {  5200, 0x00F3,  10,  15,  15,   0,  10, 252,   7, 0x01 }, // oacute
-    {     0, 0xACB0,  14,  17,  15,   1,  16,   0,   0, 0x00 }, // uniACB0
-    {   119, 0xAE30,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniAE30
+    {     0, 0xAE30,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniAE30
     {     0, 0xB0B4,  14,  17,  15,   1,  16,   0,   0, 0x00 }, // uniB0B4
-    {   119, 0xB2C8,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniB2C8
-    {   238, 0xB2E4,  15,  17,  15,   1,  16,   0,   0, 0x00 }, // uniB2E4
-    {   374, 0xB300,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniB300
-    {   493, 0xB3D9,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniB3D9
-    {     0, 0xB8E8,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniB8E8
-    {   128, 0xB9AC,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniB9AC
-    {   247, 0xBA74,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniBA74
-    {   366, 0xBC0F,  14,  17,  15,   1,  16,   0,   0, 0x00 }, // uniBC0F
-    {   485, 0xBCF4,  15,  14,  14,   0,  16,   0,   0, 0x00 }, // uniBCF4
-    {   597, 0xBE14,  15,  17,  15,   0,  16,   0,   0, 0x00 }, // uniBE14
+    {   119, 0xB300,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniB300
+    {   238, 0xB3D9,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniB3D9
+    {     0, 0xB9AC,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniB9AC
+    {   119, 0xBA74,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniBA74
+    {   238, 0xBC0F,  14,  17,  15,   1,  16,   0,   0, 0x00 }, // uniBC0F
+    {   357, 0xBCF4,  15,  14,  14,   0,  16,   0,   0, 0x00 }, // uniBCF4
     {     0, 0xC124,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniC124
     {   128, 0xC18C,  15,  14,  14,   0,  16,   0,   0, 0x00 }, // uniC18C
     {   240, 0xC2A4,  15,  14,  14,   0,  16,   0,   0, 0x00 }, // uniC2A4
@@ -119,21 +114,15 @@ KEEP extern const touchgfx::GlyphNode glyphs_Pretendard_Regular_18_4bpp[] FONT_T
     {   471, 0xC2E0,  14,  17,  15,   1,  16,   0,   0, 0x00 }, // uniC2E0
     {   590, 0xC5B4,  14,  17,  15,   0,  16,   0,   0, 0x00 }, // uniC5B4
     {   709, 0xC5B8,  14,  17,  15,   0,  16,   0,   0, 0x00 }, // uniC5B8
-    {   828, 0xC5F0,  14,  17,  15,   0,  16,   0,   0, 0x00 }, // uniC5F0
-    {   947, 0xC694,  15,  14,  14,   0,  16,   0,   0, 0x00 }, // uniC694
-    {  1059, 0xC774,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniC774
     {     0, 0xC815,  14,  17,  15,   0,  16,   0,   0, 0x00 }, // uniC815
     {   119, 0xC8FC,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniC8FC
     {   247, 0xC9C4,  13,  17,  15,   1,  16,   0,   0, 0x00 }, // uniC9C4
     {   366, 0xCC3E,  16,  17,  15,   0,  16,   0,   0, 0x00 }, // uniCC3E
     {     0, 0xD15C,  14,  17,  15,   1,  16,   0,   0, 0x00 }, // uniD15C
     {   119, 0xD1B5,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniD1B5
-    {   247, 0xD22C,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniD22C
-    {   375, 0xD3F0,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniD3F0
-    {   503, 0xD544,  14,  17,  15,   1,  16,   0,   0, 0x00 }, // uniD544
-    {   622, 0xD569,  16,  17,  15,   0,  16,   0,   0, 0x00 }, // uniD569
-    {   758, 0xD654,  16,  17,  15,   0,  16,   0,   0, 0x00 }, // uniD654
-    {   894, 0xD734,  15,  17,  15,   0,  16,   0,   0, 0x00 }  // uniD734
+    {   247, 0xD3F0,  15,  16,  14,   0,  16,   0,   0, 0x00 }, // uniD3F0
+    {   375, 0xD654,  16,  17,  15,   0,  16,   0,   0, 0x00 }, // uniD654
+    {   511, 0xD734,  15,  17,  15,   0,  16,   0,   0, 0x00 }  // uniD734
 };
 
 // Pretendard_Regular_18_4bpp
@@ -189,6 +178,6 @@ touchgfx::GeneratedFont& getFont_Pretendard_Regular_18_4bpp();
 
 touchgfx::GeneratedFont& getFont_Pretendard_Regular_18_4bpp()
 {
-    static touchgfx::GeneratedFont Pretendard_Regular_18_4bpp(glyphs_Pretendard_Regular_18_4bpp, 130, 22, 18, 0, 0, 4, 1, 1, 1, unicodes_Pretendard_Regular_18_4bpp, kerning_Pretendard_Regular_18_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont Pretendard_Regular_18_4bpp(glyphs_Pretendard_Regular_18_4bpp, 119, 22, 18, 0, 0, 4, 1, 1, 1, unicodes_Pretendard_Regular_18_4bpp, kerning_Pretendard_Regular_18_4bpp, 63, 0, 0, 0);
     return Pretendard_Regular_18_4bpp;
 }

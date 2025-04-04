@@ -178,12 +178,6 @@
     <Filter Include="Source Files\gui\containers">
       <UniqueIdentifier>21F063C7-5331-66BC-412D-13F93242B161</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\turnoffscreen_screen">
-      <UniqueIdentifier>6AF32191-97DD-6115-06D7-D3A71274E02D</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\turnoffscreen_screen">
-      <UniqueIdentifier>D3A426D8-A189-73B7-90B2-336599F5533C</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\gui\settingscreen_screen">
       <UniqueIdentifier>DCB20842-0B06-EE62-54BC-0690EB1CC8BF</UniqueIdentifier>
     </Filter>
@@ -334,215 +328,11 @@
     <Filter Include="Source Files\gui\informationsetting_screen">
       <UniqueIdentifier>1C8E38DA-64FF-EBFF-0283-C695E25FB608</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\charging_screen_screen">
-      <UniqueIdentifier>6569AECC-90D7-C68D-08AB-7996A4BE0EC3</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\swipedownfromhome_screen">
-      <UniqueIdentifier>D5D7CEBA-2926-F2A7-012F-41026BE6A414</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\swipedownfromhome_screen">
-      <UniqueIdentifier>B472862D-2E5C-82FC-C30F-CDC8533B4EE8</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\charging_screen_screen">
-      <UniqueIdentifier>2FF609B5-F785-386B-0165-C7A3065C85D2</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\stepsscreen_screen">
-      <UniqueIdentifier>CF033B79-4877-6172-82D4-D6DEC0613464</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\stepsscreen_screen">
-      <UniqueIdentifier>55FFF767-EFD2-F6B2-687F-CB8692F6E4A3</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\deviceinfosetting_screen">
-      <UniqueIdentifier>FD3885E8-8C96-03B5-C723-460825700097</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\spo2screen_screen">
-      <UniqueIdentifier>9E45CC07-F4EA-A890-64D1-3E75DF72155A</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\spo2screen_screen">
-      <UniqueIdentifier>76723923-0D5C-F465-334B-757F756CC112</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\systemsetting_screen">
-      <UniqueIdentifier>54C8F117-37CC-06B6-95A9-86F8EAE97A88</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\deviceinfosetting_screen">
-      <UniqueIdentifier>3407314C-3A61-6A79-79C1-9F53AB9ABCE7</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\informationsetting_screen">
-      <UniqueIdentifier>EEFF9466-1087-1F4C-E512-74F4A0B02915</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\systemsetting_screen">
-      <UniqueIdentifier>6B2118C4-A5FC-4F7B-AEDF-C2AB9BFA8859</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\spo2detail_screen">
-      <UniqueIdentifier>DB5B8DF6-08BB-9824-57AE-677E8CCF0D5E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\homescreenwithbiodata_screen">
-      <UniqueIdentifier>E30359E9-E78D-E95C-2C5E-1E5F975EB759</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\spo2detail_screen">
-      <UniqueIdentifier>02EC402F-FF61-9890-62C6-037E1E7794C7</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\soundnhapticssetting_screen">
-      <UniqueIdentifier>ADF4D87E-80B1-4610-E68F-B804F6F03CA7</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\soundnhapticssetting_screen">
-      <UniqueIdentifier>39D8861D-4461-370D-DF15-217EE85C0AB1</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\falldetected_screen">
-      <UniqueIdentifier>88E84A88-5575-4BD2-0E4E-42A5106446AA</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\sos_alert_screen">
-      <UniqueIdentifier>95A05BCF-7E73-C4A8-C2CB-4582AAF9A51E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\sos_alert_screen">
-      <UniqueIdentifier>A902DBAD-771D-C560-0C3C-CF01CF429EE8</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\falldetected_screen">
-      <UniqueIdentifier>B5145CEC-D772-9336-63D5-4A571ACBE088</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\informationsetting_screen">
-      <UniqueIdentifier>CB47FDB0-3461-BC6A-E3B4-C7C7112C4636</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\uncharging_screen_screen">
-      <UniqueIdentifier>92C78F50-FCF2-C517-B2A0-49B23D154859</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\sleepscreen_screen">
-      <UniqueIdentifier>C70BF5AE-0E54-3F6C-AFE9-A564008FBF23</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\sleepscreen_screen">
-      <UniqueIdentifier>DB969114-B801-1239-C7F1-B08FAA87291C</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\temphome_screen">
-      <UniqueIdentifier>B4E8DB88-1E16-DF21-AFC4-5D3391D63C10</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\flashlight_screen_screen">
-      <UniqueIdentifier>3E90FB1A-2835-28C9-D978-127DF05E6E2F</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\settingscreen_screen">
-      <UniqueIdentifier>CEFD961E-26E1-B208-9DC2-8FDFCDDB01C2</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\temphome_screen">
-      <UniqueIdentifier>1F252DE0-6A54-DB2C-DBC2-26EB90DDF483</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\settingscreen_screen">
-      <UniqueIdentifier>08CCF210-37DC-05DC-855E-C043E456492C</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\flashlight_screen_screen">
-      <UniqueIdentifier>0EC762EB-5B67-750F-7112-C0E6DB350D19</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\generated\gui_generated\containers">
       <UniqueIdentifier>8D7CBC31-1FE1-ADF9-485C-72687A7B155C</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\containers">
       <UniqueIdentifier>1BC71715-324C-7E4D-BB75-6597885F2D57</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screensetting_screen">
-      <UniqueIdentifier>54D503B1-7602-92E0-FE41-C59368191F86</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screensetting_screen">
-      <UniqueIdentifier>7D161741-FA00-DCF8-A66E-8B2FB2A03463</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screenontimesetting_screen">
-      <UniqueIdentifier>50FD6802-53DD-2863-07B3-378FA41C473A</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screenontimesetting_screen">
-      <UniqueIdentifier>65F6236E-120F-D86B-5E58-67851A7374DC</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screenbrightnesssetting_screen">
-      <UniqueIdentifier>279A83D7-00E7-BBEF-636C-0C174491BC5A</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\turnoffscreen_screen">
-      <UniqueIdentifier>232845F0-03F8-E548-23C2-8A60E74170D0</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screenbrightnesssetting_screen">
-      <UniqueIdentifier>5B604999-F527-8A2B-FADF-0231D24E9133</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\heartratedetail_screen">
-      <UniqueIdentifier>FF11B985-53B8-B2F1-C29E-E649AC409532</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\turnoffscreen_screen">
-      <UniqueIdentifier>DF3CB7C9-58A8-22F3-C772-94C48798CB71</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\heartratedetail_screen">
-      <UniqueIdentifier>8655A81A-0FAB-760D-4DF9-562D3C547902</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\networkinfosetting_screen">
-      <UniqueIdentifier>4DE8604A-DBE9-96AD-8F6A-BF7D60BEB6F0</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\networkinfosetting_screen">
-      <UniqueIdentifier>8549B72D-422B-FD58-FFB4-57195F6C194E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\homescreenwithbiodata_screen">
-      <UniqueIdentifier>A10BBCEE-E5AA-8082-35E1-0871E77ABC7E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\initblackscreen_screen">
-      <UniqueIdentifier>8F912BA3-B15B-C181-32E1-89ED2DEF4888</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\heartratescreen_screen">
-      <UniqueIdentifier>0EF2ACE4-8F23-33C0-9155-6D51AF509EB2</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\heartratescreen_screen">
-      <UniqueIdentifier>F59A96EE-8104-9663-2C33-86F78F0119A5</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\languagesetting_screen">
-      <UniqueIdentifier>0468A865-08C1-2AFF-6991-7C0BBF8EB270</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\languagesetting_screen">
-      <UniqueIdentifier>29B66A32-9984-F567-D7F5-C6FAF6A8127B</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\initblackscreen_screen">
-      <UniqueIdentifier>05692445-44EE-57D8-B650-C7B6E192B887</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\uncharging_screen_screen">
-      <UniqueIdentifier>519FC277-436A-0C75-7952-F77602E13BFB</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\setstumultime_screen">
-      <UniqueIdentifier>5896041C-21F5-074E-7A98-5D941605D396</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\setstumultime_screen">
-      <UniqueIdentifier>30FB9F15-4144-E227-5444-D0150AE31CB4</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\setstimulstrength_screen">
-      <UniqueIdentifier>A03BC764-ED03-3767-AE1B-ED8BB0002F03</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\setstimulstrength_screen">
-      <UniqueIdentifier>9B520A77-5C73-8F0F-A604-9D2EAEB80061</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\startstimul_screen">
-      <UniqueIdentifier>8A124D7A-6082-6F00-7825-EC0C1291B022</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\startstimul_screen">
-      <UniqueIdentifier>802A065F-2527-ED56-D801-C1ED441DC21C</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\startstimul_screen">
-      <UniqueIdentifier>08901A75-C082-265B-2B64-14E23EC70D49</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\startstimul_screen">
-      <UniqueIdentifier>8E0531BB-E980-1E0D-ED4C-4E9FDD93E261</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\setstumultime_screen">
-      <UniqueIdentifier>C4A82C29-C1AE-8BAF-BB31-33B452D7781E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\setstumultime_screen">
-      <UniqueIdentifier>D15E4747-BE7A-870F-3BD3-68392E000702</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\setstimulstrength_screen">
-      <UniqueIdentifier>00A49E38-54DF-4CCC-98DE-F5F3A5C1B9FD</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\setstimulstrength_screen">
-      <UniqueIdentifier>EC9D389F-DAD0-8459-5643-BAC821CE467B</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\bluetoothrequired_screen">
-      <UniqueIdentifier>789A348B-A226-DACB-1E6A-3A23637161D9</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\bluetoothrequired_screen">
-      <UniqueIdentifier>BCE03D05-55DE-E51B-7BCE-057F74322FFB</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\bluetoothrequired_screen">
-      <UniqueIdentifier>E2499635-A1ED-2331-92A4-570B9BFABB58</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\bluetoothrequired_screen">
-      <UniqueIdentifier>8C7140C7-6376-3608-BBCE-F1708DBA1954</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\screen1_screen">
       <UniqueIdentifier>82BF880E-AB1A-70EB-D965-D69CCA1BA467</UniqueIdentifier>
@@ -600,20 +390,8 @@
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\containers\batteryprogress_container.cpp">
-      <Filter>Source Files\gui\containers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\containers\batteryprogress_containerBase.cpp">
-      <Filter>Source Files\generated\gui_generated\containers</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\charging_screen_screen\charging_screenPresenter.cpp">
       <Filter>Source Files\gui\charging_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\charging_screen_screen\charging_screenView.cpp">
-      <Filter>Source Files\gui\charging_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\charging_screen_screen\charging_screenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\charging_screen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\deviceinfosetting_screen\deviceInfoSettingPresenter.cpp">
       <Filter>Source Files\gui\deviceinfosetting_screen</Filter>
@@ -621,26 +399,11 @@
     <ClCompile Include="..\..\gui\src\deviceinfosetting_screen\deviceInfoSettingView.cpp">
       <Filter>Source Files\gui\deviceinfosetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\deviceinfosetting_screen\deviceInfoSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\deviceinfosetting_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\falldetected_screen\fallDetectedPresenter.cpp">
       <Filter>Source Files\gui\falldetected_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\falldetected_screen\fallDetectedView.cpp">
-      <Filter>Source Files\gui\falldetected_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\falldetected_screen\fallDetectedViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\falldetected_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\flashlight_screen_screen\flashlight_screenPresenter.cpp">
-      <Filter>Source Files\gui\flashlight_screen_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\flashlight_screen_screen\flashlight_screenView.cpp">
       <Filter>Source Files\gui\flashlight_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\flashlight_screen_screen\flashlight_screenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\flashlight_screen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\heartratedetail_screen\HeartrateDetailPresenter.cpp">
       <Filter>Source Files\gui\heartratedetail_screen</Filter>
@@ -648,17 +411,11 @@
     <ClCompile Include="..\..\gui\src\heartratedetail_screen\HeartrateDetailView.cpp">
       <Filter>Source Files\gui\heartratedetail_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\heartratedetail_screen\HeartrateDetailViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\heartratedetail_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\heartratescreen_screen\HeartrateScreenPresenter.cpp">
       <Filter>Source Files\gui\heartratescreen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\heartratescreen_screen\HeartrateScreenView.cpp">
       <Filter>Source Files\gui\heartratescreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\heartratescreen_screen\HeartrateScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\heartratescreen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\homescreenwithbiodata_screen\HomeScreenWithBiodataPresenter.cpp">
       <Filter>Source Files\gui\homescreenwithbiodata_screen</Filter>
@@ -666,26 +423,14 @@
     <ClCompile Include="..\..\gui\src\homescreenwithbiodata_screen\HomeScreenWithBiodataView.cpp">
       <Filter>Source Files\gui\homescreenwithbiodata_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\homescreenwithbiodata_screen\HomeScreenWithBiodataViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\homescreenwithbiodata_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\informationsetting_screen\informationSettingPresenter.cpp">
       <Filter>Source Files\gui\informationsetting_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\informationsetting_screen\informationSettingView.cpp">
       <Filter>Source Files\gui\informationsetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\informationsetting_screen\informationSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\informationsetting_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\initblackscreen_screen\initBlackScreenPresenter.cpp">
       <Filter>Source Files\gui\initblackscreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\initblackscreen_screen\initBlackScreenView.cpp">
-      <Filter>Source Files\gui\initblackscreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\initblackscreen_screen\initBlackScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\initblackscreen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\languagesetting_screen\languageSettingPresenter.cpp">
       <Filter>Source Files\gui\languagesetting_screen</Filter>
@@ -693,23 +438,11 @@
     <ClCompile Include="..\..\gui\src\languagesetting_screen\languageSettingView.cpp">
       <Filter>Source Files\gui\languagesetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\languagesetting_screen\languageSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\languagesetting_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\containers\lte_status_container.cpp">
-      <Filter>Source Files\gui\containers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\containers\lte_status_containerBase.cpp">
-      <Filter>Source Files\generated\gui_generated\containers</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\networkinfosetting_screen\networkInfoSettingPresenter.cpp">
       <Filter>Source Files\gui\networkinfosetting_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\networkinfosetting_screen\networkInfoSettingView.cpp">
       <Filter>Source Files\gui\networkinfosetting_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\networkinfosetting_screen\networkInfoSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\networkinfosetting_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\screenbrightnesssetting_screen\screenbrightnessSettingPresenter.cpp">
       <Filter>Source Files\gui\screenbrightnesssetting_screen</Filter>
@@ -717,26 +450,17 @@
     <ClCompile Include="..\..\gui\src\screenbrightnesssetting_screen\screenbrightnessSettingView.cpp">
       <Filter>Source Files\gui\screenbrightnesssetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screenbrightnesssetting_screen\screenbrightnessSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screenbrightnesssetting_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\screenontimesetting_screen\screenontimeSettingPresenter.cpp">
       <Filter>Source Files\gui\screenontimesetting_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\screenontimesetting_screen\screenontimeSettingView.cpp">
       <Filter>Source Files\gui\screenontimesetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screenontimesetting_screen\screenontimeSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screenontimesetting_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\screensetting_screen\screenSettingPresenter.cpp">
       <Filter>Source Files\gui\screensetting_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\screensetting_screen\screenSettingView.cpp">
       <Filter>Source Files\gui\screensetting_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screensetting_screen\screenSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screensetting_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\setting_screenontime_notselected.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -756,26 +480,14 @@
     <ClCompile Include="..\..\gui\src\settingscreen_screen\SettingScreenView.cpp">
       <Filter>Source Files\gui\settingscreen_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\settingscreen_screen\SettingScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\settingscreen_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\sleepscreen_screen\SleepScreenPresenter.cpp">
       <Filter>Source Files\gui\sleepscreen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\sleepscreen_screen\SleepScreenView.cpp">
       <Filter>Source Files\gui\sleepscreen_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\sleepscreen_screen\SleepScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\sleepscreen_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\sos_alert_screen\sos_alertPresenter.cpp">
       <Filter>Source Files\gui\sos_alert_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\sos_alert_screen\sos_alertView.cpp">
-      <Filter>Source Files\gui\sos_alert_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\sos_alert_screen\sos_alertViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\sos_alert_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\soundnhapticssetting_screen\soundnhapticsSettingPresenter.cpp">
       <Filter>Source Files\gui\soundnhapticssetting_screen</Filter>
@@ -783,17 +495,11 @@
     <ClCompile Include="..\..\gui\src\soundnhapticssetting_screen\soundnhapticsSettingView.cpp">
       <Filter>Source Files\gui\soundnhapticssetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\soundnhapticssetting_screen\soundnhapticsSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\soundnhapticssetting_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\spo2detail_screen\Spo2DetailPresenter.cpp">
       <Filter>Source Files\gui\spo2detail_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\spo2detail_screen\Spo2DetailView.cpp">
       <Filter>Source Files\gui\spo2detail_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\spo2detail_screen\Spo2DetailViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\spo2detail_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\spo2screen_screen\Spo2ScreenPresenter.cpp">
       <Filter>Source Files\gui\spo2screen_screen</Filter>
@@ -801,17 +507,11 @@
     <ClCompile Include="..\..\gui\src\spo2screen_screen\Spo2ScreenView.cpp">
       <Filter>Source Files\gui\spo2screen_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\spo2screen_screen\Spo2ScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\spo2screen_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\stepsscreen_screen\StepsScreenPresenter.cpp">
       <Filter>Source Files\gui\stepsscreen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\stepsscreen_screen\StepsScreenView.cpp">
       <Filter>Source Files\gui\stepsscreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\stepsscreen_screen\StepsScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\stepsscreen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\swipedownfromhome_screen\swipedownfromHomePresenter.cpp">
       <Filter>Source Files\gui\swipedownfromhome_screen</Filter>
@@ -819,71 +519,17 @@
     <ClCompile Include="..\..\gui\src\swipedownfromhome_screen\swipedownfromHomeView.cpp">
       <Filter>Source Files\gui\swipedownfromhome_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\swipedownfromhome_screen\swipedownfromHomeViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\swipedownfromhome_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\systemsetting_screen\systemSettingPresenter.cpp">
       <Filter>Source Files\gui\systemsetting_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\systemsetting_screen\systemSettingView.cpp">
       <Filter>Source Files\gui\systemsetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\systemsetting_screen\systemSettingViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\systemsetting_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\temphome_screen\tempHomePresenter.cpp">
       <Filter>Source Files\gui\temphome_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\temphome_screen\tempHomeView.cpp">
-      <Filter>Source Files\gui\temphome_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\temphome_screen\tempHomeViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\temphome_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\turnoffscreen_screen\turnoffScreenPresenter.cpp">
-      <Filter>Source Files\gui\turnoffscreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\turnoffscreen_screen\turnoffScreenView.cpp">
-      <Filter>Source Files\gui\turnoffscreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\turnoffscreen_screen\turnoffScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\turnoffscreen_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\uncharging_screen_screen\unCharging_screenPresenter.cpp">
       <Filter>Source Files\gui\uncharging_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\uncharging_screen_screen\unCharging_screenView.cpp">
-      <Filter>Source Files\gui\uncharging_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\uncharging_screen_screen\unCharging_screenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\uncharging_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\setstimulstrength_screen\setStimulStrengthPresenter.cpp">
-      <Filter>Source Files\gui\setstimulstrength_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\setstimulstrength_screen\setStimulStrengthView.cpp">
-      <Filter>Source Files\gui\setstimulstrength_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\setstimulstrength_screen\setStimulStrengthViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\setstimulstrength_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\setstumultime_screen\setStumulTimePresenter.cpp">
-      <Filter>Source Files\gui\setstumultime_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\setstumultime_screen\setStumulTimeView.cpp">
-      <Filter>Source Files\gui\setstumultime_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\setstumultime_screen\setStumulTimeViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\setstumultime_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\startstimul_screen\startStimulPresenter.cpp">
-      <Filter>Source Files\gui\startstimul_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\startstimul_screen\startStimulView.cpp">
-      <Filter>Source Files\gui\startstimul_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\startstimul_screen\startStimulViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\startstimul_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\setting_stimul_strength_notselected.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -908,15 +554,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\setting_stimul_time_selectedBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\bluetoothrequired_screen\bluetoothRequiredPresenter.cpp">
-      <Filter>Source Files\gui\bluetoothrequired_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\bluetoothrequired_screen\bluetoothRequiredView.cpp">
-      <Filter>Source Files\gui\bluetoothrequired_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\bluetoothrequired_screen\bluetoothRequiredViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\bluetoothrequired_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\screen1_1_screen\Screen1_1Presenter.cpp">
       <Filter>Source Files\gui\screen1_1_screen</Filter>
@@ -1378,20 +1015,8 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\containers\batteryprogress_container.hpp">
-      <Filter>Header Files\gui\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\batteryprogress_containerBase.hpp">
-      <Filter>Header Files\generated\gui_generated\containers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\charging_screen_screen\charging_screenPresenter.hpp">
       <Filter>Header Files\gui\charging_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\charging_screen_screen\charging_screenView.hpp">
-      <Filter>Header Files\gui\charging_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\charging_screen_screen\charging_screenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\charging_screen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\deviceinfosetting_screen\deviceInfoSettingPresenter.hpp">
       <Filter>Header Files\gui\deviceinfosetting_screen</Filter>
@@ -1399,26 +1024,11 @@
     <ClInclude Include="..\..\gui\include\gui\deviceinfosetting_screen\deviceInfoSettingView.hpp">
       <Filter>Header Files\gui\deviceinfosetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\deviceinfosetting_screen\deviceInfoSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\deviceinfosetting_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\falldetected_screen\fallDetectedPresenter.hpp">
       <Filter>Header Files\gui\falldetected_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\falldetected_screen\fallDetectedView.hpp">
-      <Filter>Header Files\gui\falldetected_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\falldetected_screen\fallDetectedViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\falldetected_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\flashlight_screen_screen\flashlight_screenPresenter.hpp">
-      <Filter>Header Files\gui\flashlight_screen_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\flashlight_screen_screen\flashlight_screenView.hpp">
       <Filter>Header Files\gui\flashlight_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\flashlight_screen_screen\flashlight_screenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\flashlight_screen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\heartratedetail_screen\HeartrateDetailPresenter.hpp">
       <Filter>Header Files\gui\heartratedetail_screen</Filter>
@@ -1426,17 +1036,11 @@
     <ClInclude Include="..\..\gui\include\gui\heartratedetail_screen\HeartrateDetailView.hpp">
       <Filter>Header Files\gui\heartratedetail_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\heartratedetail_screen\HeartrateDetailViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\heartratedetail_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\heartratescreen_screen\HeartrateScreenPresenter.hpp">
       <Filter>Header Files\gui\heartratescreen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\heartratescreen_screen\HeartrateScreenView.hpp">
       <Filter>Header Files\gui\heartratescreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\heartratescreen_screen\HeartrateScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\heartratescreen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\homescreenwithbiodata_screen\HomeScreenWithBiodataPresenter.hpp">
       <Filter>Header Files\gui\homescreenwithbiodata_screen</Filter>
@@ -1444,26 +1048,14 @@
     <ClInclude Include="..\..\gui\include\gui\homescreenwithbiodata_screen\HomeScreenWithBiodataView.hpp">
       <Filter>Header Files\gui\homescreenwithbiodata_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\homescreenwithbiodata_screen\HomeScreenWithBiodataViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\homescreenwithbiodata_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\informationsetting_screen\informationSettingPresenter.hpp">
       <Filter>Header Files\gui\informationsetting_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\informationsetting_screen\informationSettingView.hpp">
       <Filter>Header Files\gui\informationsetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\informationsetting_screen\informationSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\informationsetting_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\initblackscreen_screen\initBlackScreenPresenter.hpp">
       <Filter>Header Files\gui\initblackscreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\initblackscreen_screen\initBlackScreenView.hpp">
-      <Filter>Header Files\gui\initblackscreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\initblackscreen_screen\initBlackScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\initblackscreen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\languagesetting_screen\languageSettingPresenter.hpp">
       <Filter>Header Files\gui\languagesetting_screen</Filter>
@@ -1471,23 +1063,11 @@
     <ClInclude Include="..\..\gui\include\gui\languagesetting_screen\languageSettingView.hpp">
       <Filter>Header Files\gui\languagesetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\languagesetting_screen\languageSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\languagesetting_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\containers\lte_status_container.hpp">
-      <Filter>Header Files\gui\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\lte_status_containerBase.hpp">
-      <Filter>Header Files\generated\gui_generated\containers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\networkinfosetting_screen\networkInfoSettingPresenter.hpp">
       <Filter>Header Files\gui\networkinfosetting_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\networkinfosetting_screen\networkInfoSettingView.hpp">
       <Filter>Header Files\gui\networkinfosetting_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\networkinfosetting_screen\networkInfoSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\networkinfosetting_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screenbrightnesssetting_screen\screenbrightnessSettingPresenter.hpp">
       <Filter>Header Files\gui\screenbrightnesssetting_screen</Filter>
@@ -1495,26 +1075,17 @@
     <ClInclude Include="..\..\gui\include\gui\screenbrightnesssetting_screen\screenbrightnessSettingView.hpp">
       <Filter>Header Files\gui\screenbrightnesssetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenbrightnesssetting_screen\screenbrightnessSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screenbrightnesssetting_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screenontimesetting_screen\screenontimeSettingPresenter.hpp">
       <Filter>Header Files\gui\screenontimesetting_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screenontimesetting_screen\screenontimeSettingView.hpp">
       <Filter>Header Files\gui\screenontimesetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenontimesetting_screen\screenontimeSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screenontimesetting_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screensetting_screen\screenSettingPresenter.hpp">
       <Filter>Header Files\gui\screensetting_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screensetting_screen\screenSettingView.hpp">
       <Filter>Header Files\gui\screensetting_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screensetting_screen\screenSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screensetting_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\setting_screenontime_notselected.hpp">
       <Filter>Header Files\gui\containers</Filter>
@@ -1534,26 +1105,14 @@
     <ClInclude Include="..\..\gui\include\gui\settingscreen_screen\SettingScreenView.hpp">
       <Filter>Header Files\gui\settingscreen_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settingscreen_screen\SettingScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\settingscreen_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\sleepscreen_screen\SleepScreenPresenter.hpp">
       <Filter>Header Files\gui\sleepscreen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\sleepscreen_screen\SleepScreenView.hpp">
       <Filter>Header Files\gui\sleepscreen_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\sleepscreen_screen\SleepScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\sleepscreen_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\sos_alert_screen\sos_alertPresenter.hpp">
       <Filter>Header Files\gui\sos_alert_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\sos_alert_screen\sos_alertView.hpp">
-      <Filter>Header Files\gui\sos_alert_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\sos_alert_screen\sos_alertViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\sos_alert_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\soundnhapticssetting_screen\soundnhapticsSettingPresenter.hpp">
       <Filter>Header Files\gui\soundnhapticssetting_screen</Filter>
@@ -1561,17 +1120,11 @@
     <ClInclude Include="..\..\gui\include\gui\soundnhapticssetting_screen\soundnhapticsSettingView.hpp">
       <Filter>Header Files\gui\soundnhapticssetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\soundnhapticssetting_screen\soundnhapticsSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\soundnhapticssetting_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\spo2detail_screen\Spo2DetailPresenter.hpp">
       <Filter>Header Files\gui\spo2detail_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\spo2detail_screen\Spo2DetailView.hpp">
       <Filter>Header Files\gui\spo2detail_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\spo2detail_screen\Spo2DetailViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\spo2detail_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\spo2screen_screen\Spo2ScreenPresenter.hpp">
       <Filter>Header Files\gui\spo2screen_screen</Filter>
@@ -1579,17 +1132,11 @@
     <ClInclude Include="..\..\gui\include\gui\spo2screen_screen\Spo2ScreenView.hpp">
       <Filter>Header Files\gui\spo2screen_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\spo2screen_screen\Spo2ScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\spo2screen_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\stepsscreen_screen\StepsScreenPresenter.hpp">
       <Filter>Header Files\gui\stepsscreen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\stepsscreen_screen\StepsScreenView.hpp">
       <Filter>Header Files\gui\stepsscreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\stepsscreen_screen\StepsScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\stepsscreen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\swipedownfromhome_screen\swipedownfromHomePresenter.hpp">
       <Filter>Header Files\gui\swipedownfromhome_screen</Filter>
@@ -1597,71 +1144,17 @@
     <ClInclude Include="..\..\gui\include\gui\swipedownfromhome_screen\swipedownfromHomeView.hpp">
       <Filter>Header Files\gui\swipedownfromhome_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\swipedownfromhome_screen\swipedownfromHomeViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\swipedownfromhome_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\systemsetting_screen\systemSettingPresenter.hpp">
       <Filter>Header Files\gui\systemsetting_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\systemsetting_screen\systemSettingView.hpp">
       <Filter>Header Files\gui\systemsetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\systemsetting_screen\systemSettingViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\systemsetting_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\temphome_screen\tempHomePresenter.hpp">
       <Filter>Header Files\gui\temphome_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\temphome_screen\tempHomeView.hpp">
-      <Filter>Header Files\gui\temphome_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\temphome_screen\tempHomeViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\temphome_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\turnoffscreen_screen\turnoffScreenPresenter.hpp">
-      <Filter>Header Files\gui\turnoffscreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\turnoffscreen_screen\turnoffScreenView.hpp">
-      <Filter>Header Files\gui\turnoffscreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\turnoffscreen_screen\turnoffScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\turnoffscreen_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\uncharging_screen_screen\unCharging_screenPresenter.hpp">
       <Filter>Header Files\gui\uncharging_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\uncharging_screen_screen\unCharging_screenView.hpp">
-      <Filter>Header Files\gui\uncharging_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\uncharging_screen_screen\unCharging_screenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\uncharging_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\setstimulstrength_screen\setStimulStrengthPresenter.hpp">
-      <Filter>Header Files\gui\setstimulstrength_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\setstimulstrength_screen\setStimulStrengthView.hpp">
-      <Filter>Header Files\gui\setstimulstrength_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\setstimulstrength_screen\setStimulStrengthViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\setstimulstrength_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\setstumultime_screen\setStumulTimePresenter.hpp">
-      <Filter>Header Files\gui\setstumultime_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\setstumultime_screen\setStumulTimeView.hpp">
-      <Filter>Header Files\gui\setstumultime_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\setstumultime_screen\setStumulTimeViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\setstumultime_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\startstimul_screen\startStimulPresenter.hpp">
-      <Filter>Header Files\gui\startstimul_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\startstimul_screen\startStimulView.hpp">
-      <Filter>Header Files\gui\startstimul_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\startstimul_screen\startStimulViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\startstimul_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\setting_stimul_strength_notselected.hpp">
       <Filter>Header Files\gui\containers</Filter>
@@ -1686,15 +1179,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\setting_stimul_time_selectedBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\bluetoothrequired_screen\bluetoothRequiredPresenter.hpp">
-      <Filter>Header Files\gui\bluetoothrequired_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\bluetoothrequired_screen\bluetoothRequiredView.hpp">
-      <Filter>Header Files\gui\bluetoothrequired_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\bluetoothrequired_screen\bluetoothRequiredViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\bluetoothrequired_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screen1_1_screen\Screen1_1Presenter.hpp">
       <Filter>Header Files\gui\screen1_1_screen</Filter>
