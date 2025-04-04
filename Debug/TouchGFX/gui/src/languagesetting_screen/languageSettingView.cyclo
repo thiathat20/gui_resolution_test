@@ -1,0 +1,13 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:48:23:static touchgfx::LanguageId touchgfx::Texts::getLanguage()	1
+../TouchGFX/generated/gui_generated/include/gui_generated/languagesetting_screen/languageSettingViewBase.hpp:25:26:FrontendApplication& languageSettingViewBase::application()	1
+../TouchGFX/gui/include/gui/languagesetting_screen/languageSettingView.hpp:14:13:languageSettingView::~languageSettingView()	1
+../TouchGFX/gui/include/gui/languagesetting_screen/languageSettingView.hpp:14:13:virtual languageSettingView::~languageSettingView()	1
+../TouchGFX/gui/src/languagesetting_screen/languageSettingView.cpp:6:1:languageSettingView::languageSettingView()	1
+../TouchGFX/gui/src/languagesetting_screen/languageSettingView.cpp:12:6:virtual void languageSettingView::setupScreen()	1
+../TouchGFX/gui/src/languagesetting_screen/languageSettingView.cpp:19:6:virtual void languageSettingView::tearDownScreen()	1
+../TouchGFX/gui/src/languagesetting_screen/languageSettingView.cpp:24:6:void languageSettingView::handleSwipeRight()	1
+../TouchGFX/gui/src/languagesetting_screen/languageSettingView.cpp:29:6:void languageSettingView::updateLanguageSelection()	4
+../TouchGFX/gui/src/languagesetting_screen/languageSettingView.cpp:68:6:virtual void languageSettingView::handleTickEvent()	2

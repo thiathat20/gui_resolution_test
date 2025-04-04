@@ -1,0 +1,11 @@
+../Core/Src/app_freertos.c:204:6:vApplicationIdleHook	1
+../Core/Src/app_freertos.c:223:6:MX_FREERTOS_Init	1
+../Core/Src/app_freertos.c:294:6:StartInitTask	3
+../Core/Src/app_freertos.c:324:6:StartlcdTask	2
+../Core/Src/app_freertos.c:375:6:StartPPMTask	2
+../Core/Src/app_freertos.c:403:6:StartWPMTask	48
+../Core/Src/app_freertos.c:730:6:StartSPMTask	3
+../Core/Src/app_freertos.c:769:6:StartSecTimerTask	10
+../Core/Src/app_freertos.c:889:6:StartCheckINTTask	19
+../Core/Src/app_freertos.c:1011:6:StartDATATask	2
+../Core/Src/app_freertos.c:1036:6:StartMsgTask	31

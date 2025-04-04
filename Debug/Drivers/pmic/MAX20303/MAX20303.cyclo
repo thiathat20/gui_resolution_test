@@ -1,0 +1,26 @@
+../Drivers/pmic/MAX20303/MAX20303.cpp:48:1:MAX20303::MAX20303()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:56:1:MAX20303::~MAX20303()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:63:5:int MAX20303::LDO1Config()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:75:5:int MAX20303::LDO2Config()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:88:5:int MAX20303::writeReg(registers_t, uint8_t)	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:104:5:int MAX20303::readReg(registers_t, uint8_t&)	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:117:5:int MAX20303::readRegMulti(registers_t, uint8_t*, uint8_t)	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:129:5:int MAX20303::writeRegMulti(registers_t, uint8_t*, uint8_t)	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:141:5:int MAX20303::AppWrite(uint8_t)	2
+../Drivers/pmic/MAX20303/MAX20303.cpp:157:5:int MAX20303::AppRead(uint8_t)	2
+../Drivers/pmic/MAX20303/MAX20303.cpp:170:5:int MAX20303::BuckBoostEnable()	2
+../Drivers/pmic/MAX20303/MAX20303.cpp:191:5:int MAX20303::Max20303_BatteryGauge(unsigned char*)	4
+../Drivers/pmic/MAX20303/MAX20303.cpp:215:9:uint8_t MAX20303::Battery_Status_Charger()	10
+../Drivers/pmic/MAX20303/MAX20303.cpp:271:5:int MAX20303::Max20303_HapticSetting()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:286:5:int MAX20303::Max20303_HapticSetFullScale()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:297:5:int MAX20303::Max20303_HapticDrive0()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:302:5:int MAX20303::Max20303_HapticDrive1()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:308:5:int MAX20303::Max20303_HapticStart()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:313:5:int MAX20303::Max20303_HapticStop()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:318:5:int MAX20303::Max20303_HapticStatus()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:338:5:int MAX20303::Max20303_HapticDriveStatus()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:354:6:void MAX20303::Max20303_StartHapticPattern(int, int, int)	2
+../Drivers/pmic/MAX20303/MAX20303.cpp:368:6:void MAX20303::setHapticPatternSample(const HapticPatternSample&)	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:377:6:void MAX20303::createHapticPattern()	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:415:6:void MAX20303::startHapticPatternFromRAM(uint8_t)	1
+../Drivers/pmic/MAX20303/MAX20303.cpp:430:5:int MAX20303::Buck2Config()	1

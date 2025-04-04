@@ -1,0 +1,3 @@
+../Drivers/audio/speaker.c:18:6:speaker_init	1
+../Drivers/audio/speaker.c:25:6:speaker_test_init	2
+../Drivers/audio/speaker.c:37:6:speaker_test	2

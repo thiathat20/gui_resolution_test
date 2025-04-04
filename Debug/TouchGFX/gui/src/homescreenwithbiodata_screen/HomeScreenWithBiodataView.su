@@ -1,0 +1,13 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/homescreenwithbiodata_screen/HomeScreenWithBiodataViewBase.hpp:26:26:FrontendApplication& HomeScreenWithBiodataViewBase::application()	16	static
+../TouchGFX/gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp:14:13:HomeScreenWithBiodataView::~HomeScreenWithBiodataView()	16	static
+../TouchGFX/gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp:14:13:virtual HomeScreenWithBiodataView::~HomeScreenWithBiodataView()	16	static
+../TouchGFX/gui/src/homescreenwithbiodata_screen/HomeScreenWithBiodataView.cpp:20:1:HomeScreenWithBiodataView::HomeScreenWithBiodataView()	16	static
+../TouchGFX/gui/src/homescreenwithbiodata_screen/HomeScreenWithBiodataView.cpp:27:6:virtual void HomeScreenWithBiodataView::setupScreen()	16	static
+../TouchGFX/gui/src/homescreenwithbiodata_screen/HomeScreenWithBiodataView.cpp:68:6:virtual void HomeScreenWithBiodataView::tearDownScreen()	16	static
+../TouchGFX/gui/src/homescreenwithbiodata_screen/HomeScreenWithBiodataView.cpp:73:6:virtual void HomeScreenWithBiodataView::handleTickEvent()	56	static
+../TouchGFX/gui/src/homescreenwithbiodata_screen/HomeScreenWithBiodataView.cpp:183:6:void HomeScreenWithBiodataView::handleSwipeDown()	16	static
+../TouchGFX/gui/src/homescreenwithbiodata_screen/HomeScreenWithBiodataView.cpp:188:6:void HomeScreenWithBiodataView::handleSwipeLeft()	16	static
+../TouchGFX/gui/src/homescreenwithbiodata_screen/HomeScreenWithBiodataView.cpp:193:6:void HomeScreenWithBiodataView::handleSwipeRight()	16	static

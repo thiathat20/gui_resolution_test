@@ -1,0 +1,8 @@
+../Drivers/pmic/pmic.cpp:11:5:int pmic_init()	2
+../Drivers/pmic/pmic.cpp:45:5:int pmicSOCRead(unsigned char*)	2
+../Drivers/pmic/pmic.cpp:56:5:int isBATTCharging()	2
+../Drivers/pmic/pmic.cpp:67:5:int runHaptic(int, int, int)	2
+../Drivers/pmic/pmic.cpp:92:1:void __static_initialization_and_destruction_0()	1
+../Drivers/pmic/pmic.cpp:92:1:void __static_initialization_and_destruction_1()	1
+../Drivers/pmic/pmic.cpp:92:1:cpp)	1
+../Drivers/pmic/pmic.cpp:92:1:cpp)	1

@@ -1,0 +1,14 @@
+../Core/Src/eHG4_api.c:88:9:detect_fall	2
+../Core/Src/eHG4_api.c:129:6:HAL_GPIO_EXTI_Rising_Callback	9
+../Core/Src/eHG4_api.c:166:6:HAL_GPIO_EXTI_Falling_Callback	1
+../Core/Src/eHG4_api.c:181:6:sendMessage	8
+../Core/Src/eHG4_api.c:220:6:eHG4_Init	1
+../Core/Src/eHG4_api.c:232:6:hapticCheck	8
+../Core/Src/eHG4_api.c:262:6:read_ppg	17
+../Core/Src/eHG4_api.c:332:6:mfioGPIOModeChange	5
+../Core/Src/eHG4_api.c:357:6:measPPG	10
+../Core/Src/eHG4_api.c:430:6:readMems	5
+../Core/Src/eHG4_api.c:525:8:getAltitude	1
+../Core/Src/eHG4_api.c:541:6:updateHeightData	6
+../Core/Src/eHG4_api.c:571:6:checkFallDetection	6
+../Core/Src/eHG4_api.c:619:6:BandAlert	22

@@ -1,0 +1,3 @@
+../Drivers/audio/speaker.c:18:6:speaker_init	8	static
+../Drivers/audio/speaker.c:25:6:speaker_test_init	16	static
+../Drivers/audio/speaker.c:37:6:speaker_test	16	static

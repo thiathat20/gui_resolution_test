@@ -1,0 +1,8 @@
+../Drivers/sensorhub/mems.cpp:14:6:void init_iis2mdc()	1
+../Drivers/sensorhub/mems.cpp:32:6:void read_iis2mdc(double*, double*, double*, double*)	1
+../Drivers/sensorhub/mems.cpp:95:6:void init_ism330dhcx()	1
+../Drivers/sensorhub/mems.cpp:166:6:void read_ism330dhcx(uint16_t, uint8_t, double*, double*, double*, double*, double*, double*, double*)	1
+../Drivers/sensorhub/mems.cpp:228:9:uint8_t whatKindInterrupt()	1
+../Drivers/sensorhub/mems.cpp:245:6:void read_ism330dhcx_stepCount(uint16_t*)	1
+../Drivers/sensorhub/mems.cpp:265:6:void init_lps22hh()	1
+../Drivers/sensorhub/mems.cpp:280:6:void read_lps22hh(double*, double*)	1

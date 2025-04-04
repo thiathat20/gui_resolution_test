@@ -1,0 +1,13 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/stepsscreen_screen/StepsScreenViewBase.hpp:38:26:FrontendApplication& StepsScreenViewBase::application()	16	static
+../TouchGFX/gui/include/gui/stepsscreen_screen/StepsScreenView.hpp:11:13:StepsScreenView::~StepsScreenView()	16	static
+../TouchGFX/gui/include/gui/stepsscreen_screen/StepsScreenView.hpp:11:13:virtual StepsScreenView::~StepsScreenView()	16	static
+../TouchGFX/gui/src/stepsscreen_screen/StepsScreenView.cpp:10:1:StepsScreenView::StepsScreenView()	16	static
+../TouchGFX/gui/src/stepsscreen_screen/StepsScreenView.cpp:16:6:virtual void StepsScreenView::setupScreen()	24	static
+../TouchGFX/gui/src/stepsscreen_screen/StepsScreenView.cpp:28:6:virtual void StepsScreenView::tearDownScreen()	16	static
+../TouchGFX/gui/src/stepsscreen_screen/StepsScreenView.cpp:34:6:void StepsScreenView::handleSwipeRight()	16	static
+../TouchGFX/gui/src/stepsscreen_screen/StepsScreenView.cpp:39:6:void StepsScreenView::handleSwipeLeft()	16	static
+../TouchGFX/gui/src/stepsscreen_screen/StepsScreenView.cpp:67:6:virtual void StepsScreenView::changeStepVal()	16	static
+../TouchGFX/gui/src/stepsscreen_screen/StepsScreenView.cpp:73:6:virtual void StepsScreenView::handleTickEvent()	16	static

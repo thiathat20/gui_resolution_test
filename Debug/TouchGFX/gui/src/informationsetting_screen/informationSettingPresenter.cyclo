@@ -1,0 +1,21 @@
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:37:18:virtual void touchgfx::Presenter::activate()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:47:18:virtual void touchgfx::Presenter::deactivate()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:touchgfx::Presenter::~Presenter()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:virtual touchgfx::Presenter::~Presenter()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:58:5:touchgfx::Presenter::Presenter()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:9:5:ModelListener::ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:ModelListener::~ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:12:18:virtual void ModelListener::updateClock()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:19:16:virtual void ModelListener::black_screen_display()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:20:16:virtual void ModelListener::charge_screen_display()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:21:16:virtual void ModelListener::uncharge_screen_display()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:22:16:virtual void ModelListener::sos_alert_display()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:16:virtual void ModelListener::home_screen_display()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:24:16:virtual void ModelListener::fall_detect_screen_display()	1
+../TouchGFX/gui/include/gui/informationsetting_screen/informationSettingPresenter.hpp:30:13:informationSettingPresenter::~informationSettingPresenter()	1
+../TouchGFX/gui/include/gui/informationsetting_screen/informationSettingPresenter.hpp:30:13:virtual informationSettingPresenter::~informationSettingPresenter()	1
+../TouchGFX/gui/src/informationsetting_screen/informationSettingPresenter.cpp:4:1:informationSettingPresenter::informationSettingPresenter(informationSettingView&)	1
+../TouchGFX/gui/src/informationsetting_screen/informationSettingPresenter.cpp:10:6:virtual void informationSettingPresenter::activate()	1
+../TouchGFX/gui/src/informationsetting_screen/informationSettingPresenter.cpp:15:6:virtual void informationSettingPresenter::deactivate()	1
+../TouchGFX/gui/src/informationsetting_screen/informationSettingPresenter.cpp:20:6:virtual void informationSettingPresenter::notifySwipeRight()	1

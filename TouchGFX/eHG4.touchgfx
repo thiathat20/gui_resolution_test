@@ -1,0 +1,4474 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "HomeScreenWithBiodata",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "home_background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "digitalClock",
+            "Y": 72,
+            "Width": 240,
+            "Height": 98,
+            "TextColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextId": "homescreenClock",
+            "DisplayLeadingZeroForHourIndicator": true,
+            "InitialHour": 10,
+            "InitialMinute": 10
+          },
+          {
+            "Type": "TextArea",
+            "Name": "date_value",
+            "X": 22,
+            "Y": 45,
+            "Width": 128,
+            "Height": 31,
+            "TextId": "curMonthday",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curMonth",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "curDate",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "year_value",
+            "X": 150,
+            "Y": 45,
+            "Width": 71,
+            "Height": 31,
+            "TextId": "curYear",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curYearvalue",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "home_heartrate_image",
+            "X": 19,
+            "Y": 171,
+            "Width": 22,
+            "Height": 19,
+            "RelativeFilename": "biggerHeart.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "home_spo2_image",
+            "X": 18,
+            "Y": 197,
+            "Width": 24,
+            "Height": 24,
+            "RelativeFilename": "biggerSpo2.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "home_step_image",
+            "X": 18,
+            "Y": 227,
+            "Width": 24,
+            "Height": 24,
+            "RelativeFilename": "biggerFootprint.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "home_heartrate_value",
+            "X": 47,
+            "Y": 165,
+            "Width": 174,
+            "Height": 30,
+            "TextId": "homeHr",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "H_curHrvalue",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "home_spo2_value",
+            "X": 47,
+            "Y": 194,
+            "Width": 174,
+            "Height": 30,
+            "TextId": "homeSpo2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "H_curSpo2value",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "home_steps_value",
+            "X": 47,
+            "Y": 224,
+            "Width": 174,
+            "Height": 30,
+            "TextId": "homeSteps",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "H_curStepsvalue",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_box",
+            "X": 185,
+            "Width": 55,
+            "Height": 33
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "swipedownfromHome"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "HeartrateDetail"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Spo2Detail"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "StepsScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Spo2Screen"
+            }
+          },
+          {
+            "InteractionName": "Interaction7",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "setStumulTime"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "StepsScreen",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "steps_label",
+            "Y": 4,
+            "Width": 240,
+            "Height": 30,
+            "TextId": "stepsText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "steps_value",
+            "Y": 215,
+            "Width": 240,
+            "Height": 45,
+            "TextId": "curSteps",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curStepsvalue",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_image",
+            "X": 185,
+            "Width": 55,
+            "Height": 33
+          },
+          {
+            "Type": "Image",
+            "Name": "steps_image",
+            "X": 85,
+            "Y": 90,
+            "Width": 70,
+            "Height": 70,
+            "RelativeFilename": "footprint_icon.png"
+          },
+          {
+            "Type": "CircleProgress",
+            "Name": "steps_progress",
+            "X": 30,
+            "Y": 35,
+            "Width": 180,
+            "Height": 180,
+            "Color": {
+              "Red": 93,
+              "Green": 211,
+              "Blue": 74
+            },
+            "CenterX": 90.0,
+            "CenterY": 90.0,
+            "Radius": 67.5,
+            "LineWidth": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Round",
+            "FileNameBackground": "footprint_progressbar_back.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "changeStepVal",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call StepsScreen changeStepVal",
+              "ActionComponent": "StepsScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "HeartrateScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call StepsScreen changeStepVal",
+              "ActionComponent": "StepsScreen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeStepVal"
+          }
+        ]
+      },
+      {
+        "Name": "HeartrateScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "heartrate_label",
+            "Y": 4,
+            "Width": 240,
+            "Height": 58,
+            "TextId": "heartrateText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "heartrate_value",
+            "Y": 215,
+            "Width": 240,
+            "Height": 45,
+            "TextId": "curHr",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curHrvalue",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_box",
+            "X": 185,
+            "Width": 55,
+            "Height": 33
+          },
+          {
+            "Type": "Button",
+            "Name": "heartrate_detail_button",
+            "X": 70,
+            "Y": 75,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "hr_icon.png",
+            "Released": "hr_icon.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "StepsScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Spo2Screen"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call HeartrateScreen changeHRVal",
+              "ActionComponent": "HeartrateScreen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeHRVal"
+          }
+        ]
+      },
+      {
+        "Name": "Spo2Screen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "spo2_label",
+            "Y": 4,
+            "Width": 240,
+            "Height": 30,
+            "TextId": "spo2Text",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "spo2_value",
+            "Y": 215,
+            "Width": 240,
+            "Height": 45,
+            "TextId": "curSpo2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curSpo2value",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_box",
+            "X": 185,
+            "Width": 55,
+            "Height": 33
+          },
+          {
+            "Type": "Button",
+            "Name": "spo2_detail_button",
+            "X": 70,
+            "Y": 75,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "spo2_icon.png",
+            "Released": "spo2_icon.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "HeartrateScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "SleepScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call Spo2Screen changeSpo2Val",
+              "ActionComponent": "Spo2Screen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeSpo2Val"
+          }
+        ]
+      },
+      {
+        "Name": "SleepScreen",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "sleep_label",
+            "Y": 4,
+            "Width": 240,
+            "Height": 30,
+            "TextId": "sleepText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "sleep_value",
+            "Y": 215,
+            "Width": 240,
+            "Height": 45,
+            "TextId": "curSleep",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curSleepHvalue",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "curSleepMvalue",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_box",
+            "X": 185,
+            "Width": 55,
+            "Height": 33
+          },
+          {
+            "Type": "Image",
+            "Name": "sleep_image",
+            "X": 87,
+            "Y": 92,
+            "Width": 65,
+            "Height": 65,
+            "RelativeFilename": "sleep_time_icon.png"
+          },
+          {
+            "Type": "CircleProgress",
+            "Name": "sleep_progress",
+            "X": 30,
+            "Y": 35,
+            "Width": 180,
+            "Height": 180,
+            "Color": {
+              "Red": 119,
+              "Green": 93,
+              "Blue": 195
+            },
+            "CenterX": 90.0,
+            "CenterY": 90.0,
+            "Radius": 67.5,
+            "LineWidth": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Round",
+            "FileNameBackground": "sleep_time_progressbar_back.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 75
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Spo2Screen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "HeartrateDetail",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "heartrate_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "heartrateText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "heartrate_image",
+            "X": 20,
+            "Y": 41,
+            "Width": 29,
+            "Height": 25,
+            "RelativeFilename": "heart.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "heartrate_value",
+            "X": 49,
+            "Y": 42,
+            "Width": 180,
+            "Height": 25,
+            "TextId": "curHrDetail",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curHrvalue",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_box",
+            "X": 175,
+            "Width": 65,
+            "Height": 33
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "heartrate_detail_graph",
+            "X": 20,
+            "Y": 95,
+            "Width": 200,
+            "Height": 165,
+            "DataSeed": 220740622,
+            "NumberOfValues": 24,
+            "MaxY": 200.0,
+            "Precision": "1",
+            "LastIndex": 23,
+            "XAxisScale": 1.0,
+            "GraphType": "GraphWrapOverwrite",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 201,
+                  "Green": 60,
+                  "Blue": 50
+                }
+              }
+            ]
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "updateHr",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "#if !defined(gui_simulation)\r\nif(!ehg.canDisplayPPG) return;\r\n\r\nehg.canDisplayPPG = 0;\r\n\r\ntouchgfx::Unicode::snprintf(heartrate_valueBuffer, HEARTRATE_VALUE_SIZE, \"%02u\", ehg.ssHr);\r\nheartrate_value.invalidate();\r\n#endif\r\n"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Spo2Detail",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "spo2_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "spo2Text",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "spo2_image",
+            "X": 15,
+            "Y": 33,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "waterdrop.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "spo2_value",
+            "X": 55,
+            "Y": 42,
+            "Width": 170,
+            "Height": 25,
+            "TextId": "curSpo2Detail",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "curSpo2value",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_image",
+            "X": 175,
+            "Width": 65,
+            "Height": 33
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "spo2_detail_graph",
+            "X": 20,
+            "Y": 95,
+            "Width": 200,
+            "Height": 165,
+            "DataSeed": 220740622,
+            "NumberOfValues": 24,
+            "MaxY": 200.0,
+            "Precision": "1",
+            "LastIndex": 23,
+            "XAxisScale": 1.0,
+            "GraphType": "GraphWrapOverwrite",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 50,
+                  "Green": 142,
+                  "Blue": 199
+                }
+              }
+            ]
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "updateSpo2",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "#if !defined(gui_simulation)\r\nif(!ehg.canDisplayPPG) return;\r\n\r\nehg.canDisplayPPG = 0;\r\n\r\ntouchgfx::Unicode::snprintf(spo2_valueBuffer, SPO2_VALUE_SIZE, \"%02u\", ehg.ssSpo2);\r\nspo2_value.invalidate();\r\n#endif"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "swipedownfromHome",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "haptic_togglebutton",
+            "X": 14,
+            "Y": 51,
+            "Width": 66,
+            "Height": 66,
+            "Pressed": "swipedown_button.png",
+            "Released": "swipedown_button_pressed.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "sound_togglebutton",
+            "X": 87,
+            "Y": 51,
+            "Width": 66,
+            "Height": 66,
+            "LockPosition": true,
+            "Pressed": "swipedown_button.png",
+            "Released": "swipedown_button_pressed.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "setting_button",
+            "X": 160,
+            "Y": 51,
+            "Width": 66,
+            "Height": 66,
+            "Pressed": "swipedown_button_pressed.png",
+            "Released": "swipedown_button.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "wifi_togglebutton",
+            "X": 14,
+            "Y": 124,
+            "Width": 66,
+            "Height": 66,
+            "Pressed": "swipedown_button_pressed.png",
+            "Released": "swipedown_button.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "bluetooth_togglebutton",
+            "X": 87,
+            "Y": 124,
+            "Width": 66,
+            "Height": 66,
+            "Pressed": "swipedown_button_pressed.png",
+            "Released": "swipedown_button.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "information_button",
+            "X": 14,
+            "Y": 197,
+            "Width": 66,
+            "Height": 66,
+            "Pressed": "swipedown_button_pressed.png",
+            "Released": "swipedown_button.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "flashlight_button",
+            "X": 87,
+            "Y": 197,
+            "Width": 66,
+            "Height": 66,
+            "Pressed": "swipedown_button_pressed.png",
+            "Released": "swipedown_button.png"
+          },
+          {
+            "Type": "Slider",
+            "Name": "slider1",
+            "X": 161,
+            "Y": 124,
+            "Width": 65,
+            "Height": 139,
+            "BackgroundUnselected": "swipedown_brightness_back.png",
+            "BackgroundSelected": "swipedown_brightness.png",
+            "Indicator": "swipedown_brightness_indicator.png",
+            "IndicatorPos": 11,
+            "IndicatorMax": 138,
+            "IndicatorMin": 1,
+            "ValueMax": 100,
+            "InitValue": 50
+          },
+          {
+            "Type": "Image",
+            "Name": "haptic_image",
+            "X": 23,
+            "Y": 67,
+            "Width": 48,
+            "Height": 34,
+            "RelativeFilename": "swipedown_hapticicon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sound_image",
+            "X": 101,
+            "Y": 65,
+            "Width": 39,
+            "Height": 39,
+            "Visible": false,
+            "RelativeFilename": "swipedown_soundicon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "setting_image",
+            "X": 175,
+            "Y": 66,
+            "Width": 37,
+            "Height": 37,
+            "RelativeFilename": "swipedown_settingicon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "information_image",
+            "X": 25,
+            "Y": 208,
+            "Width": 45,
+            "Height": 45,
+            "RelativeFilename": "swipedown_infoicon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "brightness_image",
+            "X": 173,
+            "Y": 173,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "swipedown_brightness_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "flashlight_image",
+            "X": 98,
+            "Y": 208,
+            "Width": 45,
+            "Height": 45,
+            "RelativeFilename": "swipedown_flashlighticon.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "topright_box",
+            "X": 175,
+            "Width": 65,
+            "Height": 33
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 174,
+            "Y": 223,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "brightness_minus.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 173,
+            "Y": 124,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "brightness_plus.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "movetoSetting",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "setting_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "SettingScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "information_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "informationSetting"
+            }
+          },
+          {
+            "InteractionName": "flashlight",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flashlight_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "flashlight_screen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SettingScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "settingscrollablecontainer",
+            "Y": 34,
+            "Width": 240,
+            "Height": 246,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Red": 96,
+              "Green": 96,
+              "Blue": 96
+            },
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "Button",
+                "Name": "screen_button",
+                "X": 14,
+                "Y": 7,
+                "Width": 212,
+                "Height": 54,
+                "Pressed": "Rectangle 30.png",
+                "Released": "Rectangle 21.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "soundnhaptics_button",
+                "X": 14,
+                "Y": 70,
+                "Width": 212,
+                "Height": 54,
+                "Pressed": "Rectangle 30.png",
+                "Released": "Rectangle 21.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "language_button",
+                "X": 14,
+                "Y": 133,
+                "Width": 212,
+                "Height": 54,
+                "Pressed": "Rectangle 30.png",
+                "Released": "Rectangle 21.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "findmyphone_button",
+                "X": 260,
+                "Y": 192,
+                "Width": 212,
+                "Height": 54,
+                "Pressed": "Rectangle 30.png",
+                "Released": "Rectangle 21.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "information_button",
+                "X": 14,
+                "Y": 196,
+                "Width": 212,
+                "Height": 54,
+                "Pressed": "Rectangle 30.png",
+                "Released": "Rectangle 21.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "system_button",
+                "X": 14,
+                "Y": 259,
+                "Width": 212,
+                "Height": 54,
+                "Pressed": "Rectangle 30.png",
+                "Released": "Rectangle 21.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "screenbutton_icon_back",
+                "X": 20,
+                "Y": 14,
+                "Width": 40,
+                "Height": 40,
+                "RelativeFilename": "setting_iconback.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "snhbutton_icon_back",
+                "X": 20,
+                "Y": 77,
+                "Width": 40,
+                "Height": 40,
+                "RelativeFilename": "setting_iconback.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "languagebutton_icon_back",
+                "X": 20,
+                "Y": 140,
+                "Width": 40,
+                "Height": 40,
+                "RelativeFilename": "setting_iconback.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "phonebutton_icon_back",
+                "X": 266,
+                "Y": 199,
+                "Width": 40,
+                "Height": 40,
+                "RelativeFilename": "setting_iconback.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "informationbutton_icon_back",
+                "X": 20,
+                "Y": 203,
+                "Width": 40,
+                "Height": 40,
+                "RelativeFilename": "setting_iconback.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "systembutton_icon_back",
+                "X": 20,
+                "Y": 266,
+                "Width": 40,
+                "Height": 40,
+                "RelativeFilename": "setting_iconback.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "screen_label",
+                "X": 66,
+                "Y": 23,
+                "Width": 155,
+                "Height": 25,
+                "TextId": "screenText",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 217,
+                  "Green": 217,
+                  "Blue": 217
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "soundnhaptics_label",
+                "X": 66,
+                "Y": 86,
+                "Width": 155,
+                "Height": 25,
+                "TextId": "soundnhapticsText",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 217,
+                  "Green": 217,
+                  "Blue": 217
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "language_label",
+                "X": 66,
+                "Y": 149,
+                "Width": 155,
+                "Height": 25,
+                "TextId": "languageText",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 217,
+                  "Green": 217,
+                  "Blue": 217
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "findmyphone_label",
+                "X": 312,
+                "Y": 208,
+                "Width": 155,
+                "Height": 25,
+                "TextId": "findmyphoneText",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 217,
+                  "Green": 217,
+                  "Blue": 217
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "information_label",
+                "X": 66,
+                "Y": 212,
+                "Width": 155,
+                "Height": 25,
+                "TextId": "informationText",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 217,
+                  "Green": 217,
+                  "Blue": 217
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "system_label",
+                "X": 66,
+                "Y": 275,
+                "Width": 155,
+                "Height": 25,
+                "TextId": "systemText",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 217,
+                  "Green": 217,
+                  "Blue": 217
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "bottom_padding_box",
+                "X": 14,
+                "Y": 312,
+                "Width": 212,
+                "Height": 9
+              },
+              {
+                "Type": "Image",
+                "Name": "screen_image",
+                "X": 23,
+                "Y": 18,
+                "Width": 33,
+                "Height": 33,
+                "RelativeFilename": "setting_screen_icon.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "sound_image",
+                "X": 23,
+                "Y": 81,
+                "Width": 33,
+                "Height": 33,
+                "RelativeFilename": "setting_sound_icon.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "language_image",
+                "X": 22,
+                "Y": 143,
+                "Width": 35,
+                "Height": 35,
+                "RelativeFilename": "setting_language_icon.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "phone_image",
+                "X": 268,
+                "Y": 202,
+                "Width": 35,
+                "Height": 35,
+                "RelativeFilename": "setting_phone_icon.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "information_image",
+                "X": 22,
+                "Y": 205,
+                "Width": 35,
+                "Height": 35,
+                "RelativeFilename": "setting_information_icon.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "system_image",
+                "X": 22,
+                "Y": 266,
+                "Width": 36,
+                "Height": 36,
+                "RelativeFilename": "setting_system_icon.png"
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "setting_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "settingLabel",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "screenSettingInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "screen_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "screenSetting"
+            }
+          },
+          {
+            "InteractionName": "snhSettingInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "soundnhaptics_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "soundnhapticsSetting"
+            }
+          },
+          {
+            "InteractionName": "languageSettingInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "language_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "languageSetting"
+            }
+          },
+          {
+            "InteractionName": "infoSettingInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "information_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "informationSetting"
+            }
+          },
+          {
+            "InteractionName": "systemSettingInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "system_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "systemSetting"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "swipedownfromHome"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "screenSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "screen_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "screen",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "ontimebutton_icon_back",
+            "X": 14,
+            "Y": 48,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "brightnessbutton_icon_back",
+            "X": 14,
+            "Y": 109,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "ontime_label",
+            "X": 66,
+            "Y": 59,
+            "Width": 140,
+            "Height": 25,
+            "TextId": "screenOnTimeText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "brightness_label",
+            "X": 66,
+            "Y": 120,
+            "Width": 140,
+            "Height": 25,
+            "TextId": "screenBrightnessText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "ontime_arrow_image",
+            "X": 211,
+            "Y": 58,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "right.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "brightness_arrow_image",
+            "X": 211,
+            "Y": 120,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "right.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "ontime_button",
+            "X": 56,
+            "Y": 43,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Alpha": 0
+          },
+          {
+            "Type": "Button",
+            "Name": "brightness_button",
+            "X": 56,
+            "Y": 104,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Alpha": 0
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "Image",
+            "Name": "ontime_image",
+            "X": 16,
+            "Y": 50,
+            "Width": 35,
+            "Height": 35,
+            "RelativeFilename": "set_setting_ontime_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "brightness_image",
+            "X": 17,
+            "Y": 112,
+            "Width": 33,
+            "Height": 33,
+            "RelativeFilename": "set_setting_brightness_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "setscreenontime",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ontime_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "screenontimeSetting"
+            }
+          },
+          {
+            "InteractionName": "setscreenbrightness",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "brightness_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "screenbrightnessSetting"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "SettingScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "screenontimeSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "ontime_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "screenontime",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "X": 22,
+            "Y": 56,
+            "Width": 197,
+            "Height": 148,
+            "SelectedItemOffset": 53,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "setting_screenontime_selected",
+            "ItemTemplateName": "setting_screenontime_notselected",
+            "NumberofItems": 6,
+            "InitialElement": 3,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.2,
+            "DragAcceleration": 1.2,
+            "OverShootPercentage": 75
+          },
+          {
+            "Type": "Image",
+            "Name": "scrollwheel_contour_image",
+            "X": 22,
+            "Y": 107,
+            "Width": 198,
+            "Height": 47,
+            "RelativeFilename": "selectline.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "ontime_done_button",
+            "X": 48,
+            "Y": 210,
+            "Width": 144,
+            "Height": 43,
+            "Pressed": "Rectanglepressed.png",
+            "Released": "Rectangle 14.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "ontime_done_label",
+            "X": 48,
+            "Y": 217,
+            "Width": 144,
+            "Height": 29,
+            "TextId": "screenontimeapply",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "screenSetting"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ontime_done_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "screenSetting"
+            }
+          },
+          {
+            "InteractionName": "callFunction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ontime_done_button"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call screenontimeSetting changeScreenOnTime",
+              "ActionComponent": "screenontimeSetting"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeScreenOnTime"
+          }
+        ]
+      },
+      {
+        "Name": "screenbrightnessSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "screenbrightness_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "screenbrightness",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Slider",
+            "Name": "slider1",
+            "X": 67,
+            "Y": 39,
+            "Width": 107,
+            "Height": 227,
+            "BackgroundUnselected": "set_brightness_back.png",
+            "BackgroundSelected": "set_brigntness.png",
+            "Indicator": "swipedown_brightness_indicator.png",
+            "IndicatorPos": 31,
+            "IndicatorMax": 226,
+            "ValueMax": 100,
+            "InitValue": 50
+          },
+          {
+            "Type": "Image",
+            "Name": "brightness_image",
+            "X": 87,
+            "Y": 179,
+            "Width": 66,
+            "Height": 66,
+            "RelativeFilename": "set_setting_slider_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "soundnhapticsSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "soundnhaptics_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "soundnhaptics",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "haptic_icon_back",
+            "X": 14,
+            "Y": 48,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sound_icon_back",
+            "X": 14,
+            "Y": 109,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "haptic_label",
+            "X": 66,
+            "Y": 59,
+            "Width": 28,
+            "Height": 19,
+            "TextId": "hapticText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "sound_label",
+            "X": 66,
+            "Y": 120,
+            "Width": 28,
+            "Height": 19,
+            "TextId": "soundText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "haptic_togglebutton",
+            "X": 60,
+            "Y": 43,
+            "Width": 170,
+            "Height": 50,
+            "InitialStatePressed": true,
+            "Pressed": "toggleon.png",
+            "Released": "toggleoff.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "sound_togglebutton",
+            "X": 60,
+            "Y": 103,
+            "Width": 170,
+            "Height": 50,
+            "LockPosition": true,
+            "Pressed": "toggleon.png",
+            "Released": "toggleoff.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "haptic_image",
+            "X": 15,
+            "Y": 55,
+            "Width": 38,
+            "Height": 25,
+            "RelativeFilename": "set_setting_haptic_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sound_image",
+            "X": 17,
+            "Y": 112,
+            "Width": 33,
+            "Height": 33,
+            "RelativeFilename": "set_setting_sound_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "languageSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "language_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "languageScreen",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "korean_icon_back",
+            "X": 14,
+            "Y": 48,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "english_icon_back",
+            "X": 14,
+            "Y": 109,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "spanish_icon_back",
+            "X": 14,
+            "Y": 170,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "korean_label",
+            "X": 66,
+            "Y": 59,
+            "Width": 107,
+            "Height": 20,
+            "TextId": "korean",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "english_label",
+            "X": 66,
+            "Y": 120,
+            "Width": 107,
+            "Height": 20,
+            "TextId": "English",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "spanish_label",
+            "X": 66,
+            "Y": 180,
+            "Width": 107,
+            "Height": 20,
+            "TextId": "Spanish",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "radioButton1",
+            "X": 60,
+            "Y": 44,
+            "Width": 170,
+            "Height": 50,
+            "Selected": true,
+            "FileNameSelected": "radiofill.png",
+            "FileNameSelectedPressed": "radiofill.png",
+            "FileNameUnselected": "radionfill.png",
+            "FileNameUnselectedPressed": "radionfill.png",
+            "RadioButtonGroup": "radioButtonGroup1"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "radioButton2",
+            "X": 60,
+            "Y": 105,
+            "Width": 170,
+            "Height": 50,
+            "FileNameSelected": "radiofill.png",
+            "FileNameSelectedPressed": "radiofill.png",
+            "FileNameUnselected": "radionfill.png",
+            "FileNameUnselectedPressed": "radionfill.png",
+            "RadioButtonGroup": "radioButtonGroup1"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "radioButton3",
+            "X": 60,
+            "Y": 166,
+            "Width": 170,
+            "Height": 50,
+            "FileNameSelected": "radiofill.png",
+            "FileNameSelectedPressed": "radiofill.png",
+            "FileNameUnselected": "radionfill.png",
+            "FileNameUnselectedPressed": "radionfill.png",
+            "RadioButtonGroup": "radioButtonGroup1"
+          },
+          {
+            "Type": "Image",
+            "Name": "korean_image",
+            "X": 22,
+            "Y": 55,
+            "Width": 24,
+            "Height": 26,
+            "RelativeFilename": "set_setting_korean_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "english_image",
+            "X": 16,
+            "Y": 111,
+            "Width": 35,
+            "Height": 35,
+            "RelativeFilename": "set_setting_english_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "spanish_image",
+            "X": 17,
+            "Y": 178,
+            "Width": 33,
+            "Height": 25,
+            "RelativeFilename": "set_setting_spanish_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "setLanguageToKorean",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "radioButton1"
+            },
+            "Action": {
+              "Type": "ActionSetLanguage",
+              "Language": "Korean"
+            }
+          },
+          {
+            "InteractionName": "setLanguageToEnglish",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "radioButton2"
+            },
+            "Action": {
+              "Type": "ActionSetLanguage",
+              "Language": "GB"
+            }
+          },
+          {
+            "InteractionName": "setLanguageToSpanish",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "radioButton3"
+            },
+            "Action": {
+              "Type": "ActionSetLanguage",
+              "Language": "Spanish"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "informationSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "information_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "Information",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "device_icon_back",
+            "X": 14,
+            "Y": 48,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "network_icon_back",
+            "X": 14,
+            "Y": 109,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_iconback.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "device_label",
+            "X": 66,
+            "Y": 59,
+            "Width": 140,
+            "Height": 25,
+            "TextId": "deviceInfoText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "network_label",
+            "X": 66,
+            "Y": 120,
+            "Width": 140,
+            "Height": 25,
+            "TextId": "networkInfoText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "device_arrow_image",
+            "X": 211,
+            "Y": 58,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "right.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "network_arrow_image",
+            "X": 211,
+            "Y": 120,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "right.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "device_button",
+            "X": 56,
+            "Y": 43,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Alpha": 0
+          },
+          {
+            "Type": "Button",
+            "Name": "network_button",
+            "X": 56,
+            "Y": 104,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_rounded_inactive.png",
+            "Alpha": 0
+          },
+          {
+            "Type": "Image",
+            "Name": "device_image",
+            "X": 14,
+            "Y": 48,
+            "Width": 40,
+            "Height": 40,
+            "RelativeFilename": "set_setting_device_icon.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "network_image",
+            "X": 19,
+            "Y": 114,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "set_setting_network_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "movetoDeviceInfo",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "device_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "deviceInfoSetting"
+            }
+          },
+          {
+            "InteractionName": "movetoNetworkInfo",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "network_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "networkInfoSetting"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "deviceInfoSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "deviceinfo_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "deviceInfo",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "model_label",
+            "Y": 67,
+            "Width": 240,
+            "Height": 29,
+            "TextId": "modelname",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "modelnameValue",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "version_label",
+            "Y": 98,
+            "Width": 240,
+            "Height": 29,
+            "TextId": "fwversion",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "fwversionValue",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "id_label",
+            "Y": 129,
+            "Width": 240,
+            "Height": 29,
+            "TextId": "idinfo",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "idinfoValue",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "serialnumber_label",
+            "Y": 160,
+            "Width": 240,
+            "Height": 29,
+            "TextId": "serialnumber",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "serialnumberValue",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "servicenumber_label",
+            "Y": 191,
+            "Width": 240,
+            "Height": 29,
+            "TextId": "servicenumber",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "servicenumberValue",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonfornothing",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonfornothing"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "informationSetting"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "networkInfoSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "networkinfo_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "networkInfo",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "imei_label",
+            "Y": 53,
+            "Width": 240,
+            "Height": 29,
+            "TextId": "imei",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "imeiValue",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "iccid_label",
+            "Y": 80,
+            "Width": 240,
+            "Height": 29,
+            "TextId": "iccid",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "iccidValue",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "systemSetting",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "system_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "system",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "reset_button",
+            "X": 20,
+            "Y": 66,
+            "Width": 200,
+            "Height": 60,
+            "Pressed": "Rectangle 32_D.png",
+            "Released": "Rectangle 32.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "poweroff_button",
+            "X": 20,
+            "Y": 161,
+            "Width": 200,
+            "Height": 60,
+            "Pressed": "Rectangle 31_D.png",
+            "Released": "Rectangle 31.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "reset_label",
+            "X": 20,
+            "Y": 80,
+            "Width": 200,
+            "Height": 29,
+            "TextId": "resetText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "poweroff_label",
+            "X": 20,
+            "Y": 175,
+            "Width": 200,
+            "Height": 29,
+            "TextId": "poweroffText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "poweroffbtn_pressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "poweroff_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "turnoffScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "turnoffScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "yousure_label",
+            "Y": 21,
+            "Width": 240,
+            "Height": 90,
+            "TextId": "offText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "no_button",
+            "X": 20,
+            "Y": 125,
+            "Width": 200,
+            "Height": 60,
+            "Pressed": "dispatch_pressed.png",
+            "Released": "dispatch_notpressed.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "yes_button",
+            "X": 20,
+            "Y": 198,
+            "Width": 200,
+            "Height": 60,
+            "Pressed": "Rectangle 31_D.png",
+            "Released": "Rectangle 31.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "yes_label",
+            "X": 20,
+            "Y": 214,
+            "Width": 200,
+            "Height": 29,
+            "TextId": "off_yes",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "no_label",
+            "X": 20,
+            "Y": 141,
+            "Width": 200,
+            "Height": 29,
+            "TextId": "off_no",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "no_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "sos_alert",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 6,
+            "Width": 240,
+            "Height": 39,
+            "TextId": "sosAlertLabel",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "Y": 196,
+            "Width": 240,
+            "Height": 80,
+            "TextId": "sosAlertText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 36,
+            "Y": 34,
+            "Width": 168,
+            "Height": 168,
+            "RelativeFilename": "sos_alert.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call sos_alert changeToSOSDetected"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "sos_alert"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeToSOSDetected"
+          }
+        ]
+      },
+      {
+        "Name": "fallDetected",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 6,
+            "Width": 240,
+            "Height": 25,
+            "TextId": "fallsOccurLabel",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 56,
+            "Y": 57,
+            "Width": 128,
+            "Height": 128,
+            "RelativeFilename": "fall detected icon.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "Y": 196,
+            "Width": 240,
+            "Height": 80,
+            "TextId": "falldetectionText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call fallDetected changeToFallDetected"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "fallDetected"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeToFallDetected"
+          }
+        ]
+      },
+      {
+        "Name": "initBlackScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton1",
+            "Width": 240,
+            "Height": 280,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 240,
+                "Height": 280,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call initBlackScreen changeToInitBlackScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "initBlackScreen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeToInitBlackScreen"
+          }
+        ]
+      },
+      {
+        "Name": "tempHome",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call tempHome changeToHomeScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeToHomeScreen"
+          }
+        ]
+      },
+      {
+        "Name": "flashlight_screen",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 280,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "flashlight_image",
+            "X": 98,
+            "Y": 118,
+            "Width": 45,
+            "Height": 45,
+            "RelativeFilename": "swipedown_flashlighticon.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flashlightBackBTN",
+            "Width": 240,
+            "Height": 280,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 240,
+                "Height": 280,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "flashlightBack",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flashlightBackBTN"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "swipedownfromHome"
+            }
+          },
+          {
+            "InteractionName": "maxBrightness",
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call flashlight_screen changeMaxBrightness",
+              "ActionComponent": "flashlight_screen"
+            }
+          },
+          {
+            "InteractionName": "beforeBright",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flashlightBackBTN"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call flashlight_screen changeBeforeBrightness",
+              "ActionComponent": "flashlight_screen"
+            }
+          },
+          {
+            "InteractionName": "resetScreenOnTime",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "#if !defined(gui_simulation)\r\nehg.brightness_count = 0;\r\n#endif"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeMaxBrightness"
+          },
+          {
+            "Name": "changeBeforeBrightness"
+          }
+        ]
+      },
+      {
+        "Name": "unCharging_screen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 190,
+            "Width": 240,
+            "Height": 58,
+            "TextId": "__SingleUse_TWFH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 51,
+            "Y": 40,
+            "Width": 139,
+            "Height": 139,
+            "RelativeFilename": "uncharging.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "changeHomeScreen",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 120
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          },
+          {
+            "InteractionName": "unchargingScreen",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call unCharging_screen changeUnChargeScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "unCharging_screen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeUnChargeScreen"
+          }
+        ]
+      },
+      {
+        "Name": "charging_screen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 190,
+            "Width": 240,
+            "Height": 58,
+            "TextId": "__SingleUse_MNWB",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 51,
+            "Y": 40,
+            "Width": 139,
+            "Height": 139,
+            "RelativeFilename": "charging.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "changeHomeScreen",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 120
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreenWithBiodata"
+            }
+          },
+          {
+            "InteractionName": "chargingScreen",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call charging_screen changeChargeScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "charging_screen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeChargeScreen"
+          }
+        ]
+      },
+      {
+        "Name": "setStimulStrength",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "X": 22,
+            "Y": 54,
+            "Width": 197,
+            "Height": 153,
+            "SelectedItemOffset": 53,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "setting_stimul_strength_selected",
+            "ItemTemplateName": "setting_stimul_strength_notselected",
+            "NumberofItems": 8,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.2,
+            "DragAcceleration": 1.2,
+            "OverShootPercentage": 75
+          },
+          {
+            "Type": "Image",
+            "Name": "scrollwheel_contour_image",
+            "X": 22,
+            "Y": 107,
+            "Width": 198,
+            "Height": 47,
+            "RelativeFilename": "selectline.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "stimulationstrength_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 48,
+            "TextId": "stimulStr_label",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          },
+          {
+            "Type": "Button",
+            "Name": "stimulstr_done_button",
+            "X": 48,
+            "Y": 210,
+            "Width": 144,
+            "Height": 43,
+            "Pressed": "Rectanglepressed.png",
+            "Released": "Rectangle 14.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 48,
+            "Y": 217,
+            "Width": 144,
+            "Height": 28,
+            "TextId": "__SingleUse_U6QI",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "gotoStimulTimer",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "stimulstr_done_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "startStimul"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "startStimul",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1",
+            "X": 48,
+            "Y": 150,
+            "Width": 144,
+            "Height": 43,
+            "Pressed": "when_started.png",
+            "Released": "when_stopped.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "stimul_setstr_button",
+            "X": 48,
+            "Y": 210,
+            "Width": 144,
+            "Height": 43,
+            "Pressed": "Rectanglepressed.png",
+            "Released": "Rectangle 14.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 48,
+            "Y": 216,
+            "Width": 144,
+            "Height": 30,
+            "TextId": "__SingleUse_PAJA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "Y": 60,
+            "Width": 240,
+            "Height": 57,
+            "TextId": "stimul_timer",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "stimul_timer_minute",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "stimul_timer_second",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "gotoStrengthSet",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "stimul_setstr_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "setStimulStrength"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "setStumulTime",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "X": 22,
+            "Y": 56,
+            "Width": 197,
+            "Height": 148,
+            "SelectedItemOffset": 53,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "setting_stimul_time_selected",
+            "ItemTemplateName": "setting_stimul_time_notselected",
+            "NumberofItems": 3,
+            "InitialElement": 1,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.2,
+            "DragAcceleration": 1.2,
+            "OverShootPercentage": 75
+          },
+          {
+            "Type": "Image",
+            "Name": "scrollwheel_contour_image",
+            "X": 22,
+            "Y": 107,
+            "Width": 198,
+            "Height": 47,
+            "RelativeFilename": "selectline.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "stimulationtime_label",
+            "Y": 6,
+            "Width": 240,
+            "Height": 48,
+            "TextId": "stumulTime_label",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          },
+          {
+            "Type": "Button",
+            "Name": "stimultime_done_button",
+            "X": 48,
+            "Y": 210,
+            "Width": 144,
+            "Height": 43,
+            "Pressed": "Rectanglepressed.png",
+            "Released": "Rectangle 14.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 48,
+            "Y": 217,
+            "Width": 144,
+            "Height": 28,
+            "TextId": "__SingleUse_87G3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "gotoStartStimulScreen",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "stimultime_done_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "startStimul"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "bluetoothRequired",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 240,
+            "Height": 280,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "batteryprogress_container1",
+            "Width": 240,
+            "Height": 23,
+            "CustomContainerDefinitionName": "batteryprogress_container"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "lte_status_container1",
+            "Width": 68,
+            "Height": 33,
+            "CustomContainerDefinitionName": "lte_status_container"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 61,
+            "Y": 34,
+            "Width": 118,
+            "Height": 118,
+            "RelativeFilename": "bluetooth_big.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "goto_bluetooth_button",
+            "X": 48,
+            "Y": 210,
+            "Width": 144,
+            "Height": 43,
+            "Pressed": "blue_btn_pressed.png",
+            "Released": "blue_btn.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "goto_bluetooth_text",
+            "X": 48,
+            "Y": 217,
+            "Width": 144,
+            "Height": 29,
+            "TextId": "goto_bluetooth_text",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 157,
+            "Width": 240,
+            "Height": 48,
+            "TextId": "__SingleUse_XZ8Y",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": -128,
+            "Width": 368,
+            "Height": 448,
+            "Pressed": "watch_mian1.png",
+            "Released": "watch_mian1.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen1_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen1_1",
+        "Components": [
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": -64,
+            "Y": -168,
+            "Width": 368,
+            "Height": 448,
+            "Pressed": "watch_mian1.png",
+            "Released": "watch_mian1.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "setting_stimul_strength_notselected",
+        "Width": 197,
+        "Height": 46,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 197,
+            "Height": 46
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Width": 197,
+            "Height": 46,
+            "TextId": "__SingleUse_473P",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 118,
+              "Green": 118,
+              "Blue": 118
+            },
+            "Wildcard1": {
+              "TextId": "stimulstr_notSelected",
+              "UseBuffer": true,
+              "BufferSize": 2
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "setting_stimul_time_notselected",
+        "Width": 197,
+        "Height": 46,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 197,
+            "Height": 46
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Width": 197,
+            "Height": 46,
+            "TextId": "__SingleUse_OWA7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 118,
+              "Green": 118,
+              "Blue": 118
+            },
+            "Wildcard1": {
+              "TextId": "stumultime_notSelected",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "setting_screenontime_notselected",
+        "Width": 197,
+        "Height": 46,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 197,
+            "Height": 46
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Width": 197,
+            "Height": 46,
+            "TextId": "__SingleUse_K9CO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 118,
+              "Green": 118,
+              "Blue": 118
+            },
+            "Wildcard1": {
+              "TextId": "notSelected",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "setting_stimul_strength_selected",
+        "Width": 197,
+        "Height": 46,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 197,
+            "Height": 46
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 3,
+            "Width": 197,
+            "Height": 43,
+            "TextId": "__SingleUse_A1BP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "stimulstr_selected",
+              "UseBuffer": true,
+              "BufferSize": 2
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "setting_stimul_time_selected",
+        "Width": 197,
+        "Height": 46,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 197,
+            "Height": 46
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 3,
+            "Width": 197,
+            "Height": 43,
+            "TextId": "__SingleUse_P7GK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "stimultime_selected",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "setting_screenontime_selected",
+        "Width": 197,
+        "Height": 46,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 197,
+            "Height": 46
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 3,
+            "Width": 197,
+            "Height": 43,
+            "TextId": "__SingleUse_3KO8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "selected",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "batteryprogress_container",
+        "Width": 240,
+        "Height": 23,
+        "Components": [
+          {
+            "Type": "ImageProgress",
+            "Name": "batteryprogress",
+            "X": 190,
+            "Y": 8,
+            "Width": 33,
+            "Height": 15,
+            "FileNameProgress": "battpercentage.png",
+            "AnchorAtZero": true,
+            "Direction": "Right",
+            "FileNameBackground": "Group 6.png",
+            "IndicatorPositionX": 2,
+            "IndicatorPositionY": 2,
+            "IndicatorPositionWidth": 27,
+            "IndicatorPositionHeight": 11,
+            "ProgressRangeMax": 100
+          },
+          {
+            "Type": "Image",
+            "Name": "chargingIMG",
+            "X": 198,
+            "Y": 8,
+            "Width": 15,
+            "Height": 15,
+            "Visible": false,
+            "RelativeFilename": "charge_on_batt.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "updateBATT",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call batteryprogress_container changeBATTVal"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "#if !defined(gui_simulation)\r\nbatteryprogress.setValue(ehg.battVal);\r\n#endif"
+            }
+          },
+          {
+            "InteractionName": "charging",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call batteryprogress_container batteryCharging"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "#if !defined(gui_simulation)\r\nchargingIMG.setVisible(ehg.isCharging);\r\nchargingIMG.invalidate();\r\n#endif"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "changeBATTVal"
+          },
+          {
+            "Name": "batteryCharging"
+          },
+          {
+            "Name": "batteryNotCharging"
+          }
+        ]
+      },
+      {
+        "Name": "lte_status_container",
+        "Width": 68,
+        "Height": 33,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "topleft_box",
+            "Width": 68,
+            "Height": 33
+          },
+          {
+            "Type": "Image",
+            "Name": "lte_image",
+            "X": 15,
+            "Y": 11,
+            "Width": 15,
+            "Height": 12,
+            "RelativeFilename": "lte_notconnected.png"
+          },
+          {
+            "Type": "ImageProgress",
+            "Name": "imageProgress1",
+            "X": 15,
+            "Y": 11,
+            "Width": 15,
+            "Height": 12,
+            "FileNameProgress": "lte.png",
+            "AnchorAtZero": true,
+            "Direction": "Right",
+            "FileNameBackground": "lte_notconnected.png",
+            "IndicatorPositionWidth": 15,
+            "IndicatorPositionHeight": 12,
+            "ProgressRangeMax": 4,
+            "ProgressInitialValue": 4
+          },
+          {
+            "Type": "ImageProgress",
+            "Name": "imageProgress2",
+            "X": 35,
+            "Y": 10,
+            "Width": 15,
+            "Height": 15,
+            "FileNameProgress": "gps_connected.png",
+            "AnchorAtZero": true,
+            "Direction": "Right",
+            "FileNameBackground": "gps_notconnected.png",
+            "IndicatorPositionWidth": 15,
+            "IndicatorPositionHeight": 15,
+            "ProgressRangeMax": 1,
+            "ProgressInitialValue": 1
+          },
+          {
+            "Type": "ImageProgress",
+            "Name": "imageProgress3",
+            "X": 53,
+            "Y": 10,
+            "Width": 15,
+            "Height": 15,
+            "FileNameProgress": "bluetooth.png",
+            "AnchorAtZero": true,
+            "Direction": "Right",
+            "FileNameBackground": "bluetooth_off.png",
+            "IndicatorPositionWidth": 15,
+            "IndicatorPositionHeight": 15,
+            "ProgressRangeMax": 1,
+            "ProgressInitialValue": 1
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "demo_eHG4",
+    "Resolution": {
+      "Width": 240,
+      "Height": 280
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "Korean",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplateName": "Simulator",
+    "ApplicationTemplateVersion": "2.0.0",
+    "ApplicationTemplateDescription": "Simulator Application Template",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "1": "LCD1bpp",
+      "2": "LCD2bpp",
+      "4": "LCD4bpp",
+      "8": "LCD8bpp_ARGB2222",
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 280
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "Features": [
+          {
+            "Id": "TextureMapperImageFormats",
+            "Features": [
+              {
+                "Id": "RGB565",
+                "IsEnabled": true
+              },
+              {
+                "Id": "ARGB8888",
+                "IsEnabled": true
+              },
+              {
+                "Id": "L8_RGB565",
+                "IsEnabled": true
+              },
+              {
+                "Id": "L8_RGB888",
+                "IsEnabled": true
+              },
+              {
+                "Id": "L8_ARGB888",
+                "Features": [
+                  {
+                    "Id": "NearestNeighbor",
+                    "IsEnabled": true
+                  }
+                ]
+              },
+              {
+                "Id": "A4",
+                "IsEnabled": true
+              }
+            ]
+          },
+          {
+            "Id": "L8Compression",
+            "IsEnabled": true
+          }
+        ]
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "",
+    "FlashTargetCommand": "",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U575/585",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m33",
+    "ProjectFile": "../eHG4.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.23.2",
+  "CreatedBy": "4.23.2"
+}

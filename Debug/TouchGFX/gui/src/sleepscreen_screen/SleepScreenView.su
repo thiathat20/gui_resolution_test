@@ -1,0 +1,11 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/sleepscreen_screen/SleepScreenViewBase.hpp:28:26:FrontendApplication& SleepScreenViewBase::application()	16	static
+../TouchGFX/gui/include/gui/sleepscreen_screen/SleepScreenView.hpp:11:13:SleepScreenView::~SleepScreenView()	16	static
+../TouchGFX/gui/include/gui/sleepscreen_screen/SleepScreenView.hpp:11:13:virtual SleepScreenView::~SleepScreenView()	16	static
+../TouchGFX/gui/src/sleepscreen_screen/SleepScreenView.cpp:9:1:SleepScreenView::SleepScreenView()	16	static
+../TouchGFX/gui/src/sleepscreen_screen/SleepScreenView.cpp:15:6:virtual void SleepScreenView::setupScreen()	16	static
+../TouchGFX/gui/src/sleepscreen_screen/SleepScreenView.cpp:20:6:virtual void SleepScreenView::tearDownScreen()	16	static
+../TouchGFX/gui/src/sleepscreen_screen/SleepScreenView.cpp:25:6:void SleepScreenView::handleSwipeRight()	16	static
+../TouchGFX/gui/src/sleepscreen_screen/SleepScreenView.cpp:50:6:virtual void SleepScreenView::handleTickEvent()	16	static
