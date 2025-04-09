@@ -1,5 +1,5 @@
 ../Core/Src/eHG4_api.c:88:9:detect_fall	2
-../Core/Src/eHG4_api.c:129:6:HAL_GPIO_EXTI_Rising_Callback	9
+../Core/Src/eHG4_api.c:129:6:HAL_GPIO_EXTI_Rising_Callback	8
 ../Core/Src/eHG4_api.c:166:6:HAL_GPIO_EXTI_Falling_Callback	1
 ../Core/Src/eHG4_api.c:181:6:sendMessage	8
 ../Core/Src/eHG4_api.c:220:6:eHG4_Init	1

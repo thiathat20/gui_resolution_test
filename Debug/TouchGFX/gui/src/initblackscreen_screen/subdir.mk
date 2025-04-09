@@ -5,16 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.cpp \
-../TouchGFX/gui/src/initblackscreen_screen/initBlackScreenView.cpp 
+../TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.cpp 
 
 OBJS += \
-./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.o \
-./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenView.o 
+./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.o 
 
 CPP_DEPS += \
-./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.d \
-./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenView.d 
+./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +21,7 @@ TouchGFX/gui/src/initblackscreen_screen/%.o TouchGFX/gui/src/initblackscreen_scr
 clean: clean-TouchGFX-2f-gui-2f-src-2f-initblackscreen_screen
 
 clean-TouchGFX-2f-gui-2f-src-2f-initblackscreen_screen:
-	-$(RM) ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.cyclo ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.d ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.o ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.su ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenView.cyclo ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenView.d ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenView.o ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenView.su
+	-$(RM) ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.cyclo ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.d ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.o ./TouchGFX/gui/src/initblackscreen_screen/initBlackScreenPresenter.su
 
 .PHONY: clean-TouchGFX-2f-gui-2f-src-2f-initblackscreen_screen
 

@@ -48,11 +48,11 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOI_CLK_ENABLE();
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(BT_WKUP_B_GPIO_Port, BT_WKUP_B_Pin, GPIO_PIN_SET);
@@ -104,12 +104,6 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PMIC_PFN2_Pin CPU_FUNC_SW_Pin */
-  GPIO_InitStruct.Pin = PMIC_PFN2_Pin|CPU_FUNC_SW_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
   /*Configure GPIO pins : TEMP_INT_Pin PMIC_INT_new_Pin */
   GPIO_InitStruct.Pin = TEMP_INT_Pin|PMIC_INT_new_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
@@ -131,17 +125,17 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : TOUCH_INT_Pin PRESS_INT_Pin MAG_INT_Pin */
-  GPIO_InitStruct.Pin = TOUCH_INT_Pin|PRESS_INT_Pin|MAG_INT_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
   /*Configure GPIO pin : IMU_INT1_Pin */
   GPIO_InitStruct.Pin = IMU_INT1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(IMU_INT1_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PRESS_INT_Pin MAG_INT_Pin TOUCH_INT_Pin */
+  GPIO_InitStruct.Pin = PRESS_INT_Pin|MAG_INT_Pin|TOUCH_INT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : CATM1_GPIO_EN_Pin LTE_GNSS_WKUP_Pin */
   GPIO_InitStruct.Pin = CATM1_GPIO_EN_Pin|LTE_GNSS_WKUP_Pin;
@@ -188,21 +182,15 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(IMU_INT2_1_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : CPU_FUNC_SW_Pin */
+  GPIO_InitStruct.Pin = CPU_FUNC_SW_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(CPU_FUNC_SW_GPIO_Port, &GPIO_InitStruct);
+
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI5_IRQn, 5, 0);
   HAL_NVIC_EnableIRQ(EXTI5_IRQn);
-
-  HAL_NVIC_SetPriority(EXTI8_IRQn, 5, 0);
-  HAL_NVIC_EnableIRQ(EXTI8_IRQn);
-
-  HAL_NVIC_SetPriority(EXTI9_IRQn, 5, 0);
-  HAL_NVIC_EnableIRQ(EXTI9_IRQn);
-
-  HAL_NVIC_SetPriority(EXTI13_IRQn, 5, 0);
-  HAL_NVIC_EnableIRQ(EXTI13_IRQn);
-
-  HAL_NVIC_SetPriority(EXTI14_IRQn, 5, 0);
-  HAL_NVIC_EnableIRQ(EXTI14_IRQn);
 
 }
 

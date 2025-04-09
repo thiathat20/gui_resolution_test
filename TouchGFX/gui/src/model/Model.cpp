@@ -31,33 +31,7 @@ void Model::tick()
 #ifndef SIMULATOR
   //modelListener->notifyTemperatureChanged(cwData.temperature);
 
-  if (osMessageQueueGetCount(guiQueueHandle) > 0)
-  {
-    if (osMessageQueueGet(guiQueueHandle, &msgData_r, 0, 0) == osOK)
-    {
-      printf("Recv GUI MSG : %d\r\n", (msgData_r.msgType));
-      switch(msgData_r.msgType) {
-        case BLACK_SCREEN:
-          static_cast<FrontendApplication*>(touchgfx::Application::getInstance())->gotoinitBlackScreenScreenNoTransition();
-          break;
-        case CHARGE_SCREEN:
-          static_cast<FrontendApplication*>(touchgfx::Application::getInstance())->gotocharging_screenScreenNoTransition();
-          break;
-        case UNCHARGE_SCREEN:
-          static_cast<FrontendApplication*>(touchgfx::Application::getInstance())->gotounCharging_screenScreenNoTransition();
-          break;
-        case SOS_ALERT:
-          static_cast<FrontendApplication*>(touchgfx::Application::getInstance())->gotosos_alertScreenNoTransition();
-          break;
-        case HOME_SCREEN:
-          static_cast<FrontendApplication*>(touchgfx::Application::getInstance())->gotoHomeScreenWithBiodataScreenNoTransition();
-          break;
-        case FALL_DETECTION:
-          static_cast<FrontendApplication*>(touchgfx::Application::getInstance())->gotofallDetectedScreenNoTransition();
-          break;
-      }
-    }
-  }
+
 #endif
 
 }

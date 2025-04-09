@@ -5,16 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.cpp \
-../TouchGFX/gui/src/sos_alert_screen/sos_alertView.cpp 
+../TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.cpp 
 
 OBJS += \
-./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.o \
-./TouchGFX/gui/src/sos_alert_screen/sos_alertView.o 
+./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.o 
 
 CPP_DEPS += \
-./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.d \
-./TouchGFX/gui/src/sos_alert_screen/sos_alertView.d 
+./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +21,7 @@ TouchGFX/gui/src/sos_alert_screen/%.o TouchGFX/gui/src/sos_alert_screen/%.su Tou
 clean: clean-TouchGFX-2f-gui-2f-src-2f-sos_alert_screen
 
 clean-TouchGFX-2f-gui-2f-src-2f-sos_alert_screen:
-	-$(RM) ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.cyclo ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.d ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.o ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.su ./TouchGFX/gui/src/sos_alert_screen/sos_alertView.cyclo ./TouchGFX/gui/src/sos_alert_screen/sos_alertView.d ./TouchGFX/gui/src/sos_alert_screen/sos_alertView.o ./TouchGFX/gui/src/sos_alert_screen/sos_alertView.su
+	-$(RM) ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.cyclo ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.d ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.o ./TouchGFX/gui/src/sos_alert_screen/sos_alertPresenter.su
 
 .PHONY: clean-TouchGFX-2f-gui-2f-src-2f-sos_alert_screen
 

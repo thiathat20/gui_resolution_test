@@ -148,10 +148,10 @@ void HAL_GPIO_EXTI_Rising_Callback(uint16_t GPIO_Pin)
     sendMessage(MSG_INT, INT_HOME_BTN);
     ehg.occured_HOMEBTNInterrupt = 1;
   }
-  else if(GPIO_Pin == PMIC_PFN2_Pin) {
-	sendMessage(MSG_INT, INT_PMIC_BTN);
-	ehg.occurred_PMICBUTTInterrupt = 1;
-  }
+//  else if(GPIO_Pin == PMIC_PFN2_Pin) {
+//	sendMessage(MSG_INT, INT_PMIC_BTN);
+//	ehg.occurred_PMICBUTTInterrupt = 1;
+//  }
 //  else if(GPIO_Pin == LTE_MCU_WKUP_INT_Pin) {
 //  }
   else if(GPIO_Pin == IMU_INT1_Pin) {

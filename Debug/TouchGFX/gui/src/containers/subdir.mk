@@ -5,22 +5,28 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/gui/src/containers/batteryprogress_container.cpp \
-../TouchGFX/gui/src/containers/lte_status_container.cpp \
 ../TouchGFX/gui/src/containers/setting_screenontime_notselected.cpp \
-../TouchGFX/gui/src/containers/setting_screenontime_selected.cpp 
+../TouchGFX/gui/src/containers/setting_screenontime_selected.cpp \
+../TouchGFX/gui/src/containers/setting_stimul_strength_notselected.cpp \
+../TouchGFX/gui/src/containers/setting_stimul_strength_selected.cpp \
+../TouchGFX/gui/src/containers/setting_stimul_time_notselected.cpp \
+../TouchGFX/gui/src/containers/setting_stimul_time_selected.cpp 
 
 OBJS += \
-./TouchGFX/gui/src/containers/batteryprogress_container.o \
-./TouchGFX/gui/src/containers/lte_status_container.o \
 ./TouchGFX/gui/src/containers/setting_screenontime_notselected.o \
-./TouchGFX/gui/src/containers/setting_screenontime_selected.o 
+./TouchGFX/gui/src/containers/setting_screenontime_selected.o \
+./TouchGFX/gui/src/containers/setting_stimul_strength_notselected.o \
+./TouchGFX/gui/src/containers/setting_stimul_strength_selected.o \
+./TouchGFX/gui/src/containers/setting_stimul_time_notselected.o \
+./TouchGFX/gui/src/containers/setting_stimul_time_selected.o 
 
 CPP_DEPS += \
-./TouchGFX/gui/src/containers/batteryprogress_container.d \
-./TouchGFX/gui/src/containers/lte_status_container.d \
 ./TouchGFX/gui/src/containers/setting_screenontime_notselected.d \
-./TouchGFX/gui/src/containers/setting_screenontime_selected.d 
+./TouchGFX/gui/src/containers/setting_screenontime_selected.d \
+./TouchGFX/gui/src/containers/setting_stimul_strength_notselected.d \
+./TouchGFX/gui/src/containers/setting_stimul_strength_selected.d \
+./TouchGFX/gui/src/containers/setting_stimul_time_notselected.d \
+./TouchGFX/gui/src/containers/setting_stimul_time_selected.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -30,7 +36,7 @@ TouchGFX/gui/src/containers/%.o TouchGFX/gui/src/containers/%.su TouchGFX/gui/sr
 clean: clean-TouchGFX-2f-gui-2f-src-2f-containers
 
 clean-TouchGFX-2f-gui-2f-src-2f-containers:
-	-$(RM) ./TouchGFX/gui/src/containers/batteryprogress_container.cyclo ./TouchGFX/gui/src/containers/batteryprogress_container.d ./TouchGFX/gui/src/containers/batteryprogress_container.o ./TouchGFX/gui/src/containers/batteryprogress_container.su ./TouchGFX/gui/src/containers/lte_status_container.cyclo ./TouchGFX/gui/src/containers/lte_status_container.d ./TouchGFX/gui/src/containers/lte_status_container.o ./TouchGFX/gui/src/containers/lte_status_container.su ./TouchGFX/gui/src/containers/setting_screenontime_notselected.cyclo ./TouchGFX/gui/src/containers/setting_screenontime_notselected.d ./TouchGFX/gui/src/containers/setting_screenontime_notselected.o ./TouchGFX/gui/src/containers/setting_screenontime_notselected.su ./TouchGFX/gui/src/containers/setting_screenontime_selected.cyclo ./TouchGFX/gui/src/containers/setting_screenontime_selected.d ./TouchGFX/gui/src/containers/setting_screenontime_selected.o ./TouchGFX/gui/src/containers/setting_screenontime_selected.su
+	-$(RM) ./TouchGFX/gui/src/containers/setting_screenontime_notselected.cyclo ./TouchGFX/gui/src/containers/setting_screenontime_notselected.d ./TouchGFX/gui/src/containers/setting_screenontime_notselected.o ./TouchGFX/gui/src/containers/setting_screenontime_notselected.su ./TouchGFX/gui/src/containers/setting_screenontime_selected.cyclo ./TouchGFX/gui/src/containers/setting_screenontime_selected.d ./TouchGFX/gui/src/containers/setting_screenontime_selected.o ./TouchGFX/gui/src/containers/setting_screenontime_selected.su ./TouchGFX/gui/src/containers/setting_stimul_strength_notselected.cyclo ./TouchGFX/gui/src/containers/setting_stimul_strength_notselected.d ./TouchGFX/gui/src/containers/setting_stimul_strength_notselected.o ./TouchGFX/gui/src/containers/setting_stimul_strength_notselected.su ./TouchGFX/gui/src/containers/setting_stimul_strength_selected.cyclo ./TouchGFX/gui/src/containers/setting_stimul_strength_selected.d ./TouchGFX/gui/src/containers/setting_stimul_strength_selected.o ./TouchGFX/gui/src/containers/setting_stimul_strength_selected.su ./TouchGFX/gui/src/containers/setting_stimul_time_notselected.cyclo ./TouchGFX/gui/src/containers/setting_stimul_time_notselected.d ./TouchGFX/gui/src/containers/setting_stimul_time_notselected.o ./TouchGFX/gui/src/containers/setting_stimul_time_notselected.su ./TouchGFX/gui/src/containers/setting_stimul_time_selected.cyclo ./TouchGFX/gui/src/containers/setting_stimul_time_selected.d ./TouchGFX/gui/src/containers/setting_stimul_time_selected.o ./TouchGFX/gui/src/containers/setting_stimul_time_selected.su
 
 .PHONY: clean-TouchGFX-2f-gui-2f-src-2f-containers
 

@@ -121,9 +121,6 @@ void Error_Handler(void);
 #define SPEAKER_EN_GPIO_Port GPIOE
 #define LCD_DC_Pin GPIO_PIN_1
 #define LCD_DC_GPIO_Port GPIOE
-#define PMIC_PFN2_Pin GPIO_PIN_5
-#define PMIC_PFN2_GPIO_Port GPIOB
-#define PMIC_PFN2_EXTI_IRQn EXTI5_IRQn
 #define TEMP_INT_Pin GPIO_PIN_10
 #define TEMP_INT_GPIO_Port GPIOG
 #define SS_MFIO_Pin GPIO_PIN_4
@@ -138,9 +135,6 @@ void Error_Handler(void);
 #define LCD_TE_GPIO_Port GPIOE
 #define LS_EN_1_Pin GPIO_PIN_0
 #define LS_EN_1_GPIO_Port GPIOF
-#define TOUCH_INT_Pin GPIO_PIN_13
-#define TOUCH_INT_GPIO_Port GPIOC
-#define TOUCH_INT_EXTI_IRQn EXTI13_IRQn
 #define IMU_INT1_Pin GPIO_PIN_6
 #define IMU_INT1_GPIO_Port GPIOE
 #define SS_RSTN_Pin GPIO_PIN_5
@@ -165,10 +159,8 @@ void Error_Handler(void);
 #define PMIC_INT_new_GPIO_Port GPIOG
 #define PRESS_INT_Pin GPIO_PIN_9
 #define PRESS_INT_GPIO_Port GPIOC
-#define PRESS_INT_EXTI_IRQn EXTI9_IRQn
 #define MAG_INT_Pin GPIO_PIN_8
 #define MAG_INT_GPIO_Port GPIOC
-#define MAG_INT_EXTI_IRQn EXTI8_IRQn
 #define LTE_UART_TX_Pin GPIO_PIN_9
 #define LTE_UART_TX_GPIO_Port GPIOA
 #define LTE_UART_CTS_Pin GPIO_PIN_11
@@ -205,11 +197,13 @@ void Error_Handler(void);
 #define LTE_RESET_GPIO_Port GPIOB
 #define BLE_TX_Pin GPIO_PIN_2
 #define BLE_TX_GPIO_Port GPIOA
+#define TOUCH_INT_Pin GPIO_PIN_5
+#define TOUCH_INT_GPIO_Port GPIOC
+#define TOUCH_INT_EXTI_IRQn EXTI5_IRQn
 #define SENSOR_PWR_EN_1V8_Pin GPIO_PIN_11
 #define SENSOR_PWR_EN_1V8_GPIO_Port GPIOF
 #define CPU_FUNC_SW_Pin GPIO_PIN_14
 #define CPU_FUNC_SW_GPIO_Port GPIOB
-#define CPU_FUNC_SW_EXTI_IRQn EXTI14_IRQn
 #define BLE_RX_Pin GPIO_PIN_3
 #define BLE_RX_GPIO_Port GPIOA
 #define TP1_Pin GPIO_PIN_1

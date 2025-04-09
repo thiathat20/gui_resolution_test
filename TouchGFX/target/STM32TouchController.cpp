@@ -71,8 +71,8 @@ bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
 	uint8_t normalTouch = 1;
 	switch(gesture){
 		case None: // Drag
-//			x = read_x(touchData);
-//			y = read_y(touchData);
+			x = read_x(touchData);
+			y = read_y(touchData);
 			break;
 		case SingleTap: // touch
 			x = read_x(touchData);
